@@ -10,8 +10,8 @@ span {
   color: #1c0404;
 }
 .navbar-expand-lg {
-  width: 70% !important;
-  position: absolute;
+  width: 90% !important;
+  position: absolute; /* TODO: ESTE TIENE QUE SER ABSOLUTE */
   z-index: 9;
 }
 .promos {
@@ -85,6 +85,11 @@ span {
   font-weight: 400;
   font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
+}
+
+.splide__arrow--next,
+.splide__arrow--prev {
+  margin-top: 1rem !important;
 }
 .marquee2 {
   height: 48rem;
@@ -290,7 +295,7 @@ button {
   background: none;
 }
 .modal-dialog {
-  max-width: 90% !important;
+  max-width: 90%;
 }
 .modal {
   z-index: 999999999 !important;
@@ -429,7 +434,7 @@ textarea {
   background: none;
   outline: none;
   border: none;
-  transform: translateX(320px);
+  /* transform: translateX(320px); */
   z-index: 999999;
 }
 .collapse:not(.show) {
@@ -441,6 +446,12 @@ textarea {
 .block {
   display: block;
 }
+.hamburger-container {
+  background-color: #eed8c0;
+  padding: 0.2rem 0.7rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .hamburguer .bar,
 .hamburguer:after,
 .hamburguer:before {
@@ -449,7 +460,7 @@ textarea {
   width: 100%;
   height: 5px;
   background-color: #5c1911 !important;
-  margin: 6px 8px;
+  margin: 6px 0px;
   transition: 0.4s;
 }
 .hamburguer.is-active:before {
@@ -460,6 +471,10 @@ textarea {
 }
 .hamburguer.is-active .bar {
   opacity: 0;
+}
+.menu-text {
+  color: #7d2e25;
+  font-size: 1.1rem;
 }
 #reproducir {
   position: absolute;
@@ -503,7 +518,7 @@ textarea {
     margin-top: 2rem;
   }
   .hamburguer {
-    transform: translateX(95px);
+    /* transform: translateX(95px); */
   }
   .navbar-brand img {
     width: 5rem !important;
@@ -555,6 +570,15 @@ textarea {
     height: 13rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .hamburger-container {
+    padding: 0.5rem 0.7rem;
+  }
+  .modal-dialog {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 1500px) {
   .marquee {
     height: 27rem;
@@ -578,10 +602,10 @@ textarea {
     bottom: 47%;
   }
   .navbar-brand {
-    margin-left: -6rem;
+    /* margin-left: -6rem; */
   }
   .hamburguer {
-    margin-left: 10rem;
+    /* margin-left: 10rem; */
   }
   .nosotros-p {
     font-size: 1.3rem;
@@ -593,9 +617,17 @@ textarea {
     max-width: 15rem;
   }
 }
+
+@media screen and (min-width: 576px) {
+  .navbar-expand-lg {
+    width: 80% !important;
+    position: absolute; /* TODO: ESTE TIENE QUE SER ABSOLUTE */
+    z-index: 9;
+  }
+}
 @media screen and (min-width: 701px) and (max-width: 1023px) {
   .hamburguer {
-    transform: translateX(196px);
+    /* transform: translateX(196px); */
   }
   .width {
     width: 25.5%;
@@ -632,7 +664,7 @@ textarea {
     margin-left: -18rem;
   }
   .hamburguer {
-    margin-left: 45rem;
+    /* margin-left: 45rem; */
   }
   .vision-texto img {
     max-width: 17rem;
