@@ -1,631 +1,645 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; ISO-8859-1">
-	<meta name="DC.Language" scheme="RFC1766" content="Spanish">
-	<meta name="author" content="FV">
-	<meta name="description" content="Restaurante">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="keywords" content="">
-	<meta name="Resource-type" content="Document">
-	<meta name="Revisit-after" content="2 days">
-	<meta name="robots" content="All">
-	<title>DaVinci</title>
-	<meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/819330974d.js" crossorigin="anonymous"></script>	
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Type" content="text/html; ISO-8859-1">
+  <meta name="DC.Language" scheme="RFC1766" content="Spanish">
+  <meta name="author" content="FV">
+  <meta name="description" content="Restaurante">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="">
+  <meta name="Resource-type" content="Document">
+  <meta name="Revisit-after" content="2 days">
+  <meta name="robots" content="All">
+  <title>DaVinci</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://kit.fontawesome.com/819330974d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </head>
-<body >
-    <nav class="mobile-nav">
-        <div class="container">
-            <a href="#">INICIO</a>
-            <button type="button" id="menu-restaurant" data-bs-toggle="modal" data-bs-target="#exampleModa600">
-              MENU/RESTAURANT
-            </button>              
-            <a href="https://api.whatsapp.com/send/?phone=584121085309&text&type=phone_number&app_absent=0&text=¡Bienvenido a nuestro ristorante! A través de acá podrás realizar la reservación para tu desayuno, almuerzo, cena o evento especial e igualmente indicarnos si te gustaría hacer un pedido vía delivery o pick-up.⁣ 🍽️" target="__blank">RESERVAS</a>
-            <a href="#nosotros">NOSOTROS</a>
-            <a href="#sugerencias">SUGERENCIAS</a>
-            <a href="#contacto">CONTACTO</a>
-        </div>
-	  </nav>
-      <div class="boton-arriba-contenedor">
-		<a href="https://api.whatsapp.com/send/?phone=584121085309&text&type=phone_number&app_absent=0&text=¡Bienvenido a nuestro ristorante! A través de acá podrás realizar la reservación para tu desayuno, almuerzo, cena o evento especial e igualmente indicarnos si te gustaría hacer un pedido vía delivery o pick-up.⁣ 🍽️" target="__blank">
-		  <div class="volver-arriba">
-			<i class="fab fa-whatsapp"></i>		</div>
-		</a>
-	  </div>
-      <div class="boton-arriba-contenedor" id="actualizacion-contacto">
-		<a href="https://quikpago.com/store/showcase/products?market=RFs3QBxCCXleJiCD613D" target="_blank"><div class="pedidos">
-			<img style="width: 5rem;" src="./img/boton-reserva_(1).png" alt="">
-      <span class="tooltip-">¡Solicita tu orden!
-      </span>
-		</div></a>
-	  </div>
-    <div class="boton-arriba-contenedor" id="actualizacion-new-reserve">
-      <a href="https://api.whatsapp.com/send/?phone=584121085309&text&type=phone_number&app_absent=0&text=¡Bienvenido a nuestro ristorante! A través de acá podrás realizar la reservación para tu desayuno, almuerzo, cena o evento especial e igualmente indicarnos si te gustaría hacer un pedido vía delivery o pick-up.⁣ 🍽️" target="_blank"><div class="pedidos----">
+
+<body>
+  <nav class="mobile-nav">
+    <div class="container d-flex flex-column align-items-end mobile-nav-container">
+      <a href="#">INICIO</a>
+      <button type="button" id="menu-restaurant" data-bs-toggle="modal" data-bs-target="#exampleModa600">
+        MENU/RESTAURANT
+      </button>
+      <a href="https://api.whatsapp.com/send/?phone=584122994586&text&type=phone_number&app_absent=0&text=¡Bienvenido a nuestro ristorante! A través de acá podrás realizar la reservación para tu desayuno, almuerzo, cena o evento especial. ⁣ 🍽️" target="__blank">RESERVAS</a>
+      <a href="#nosotros">NOSOTROS</a>
+      <a href="#sugerencias">SUGERENCIAS</a>
+      <a href="#contacto">CONTACTO</a>
+    </div>
+  </nav>
+  <div class="boton-arriba-contenedor">
+    <a href="https://api.whatsapp.com/send/?phone=584122994586&text&type=phone_number&app_absent=0&text=¡Bienvenido a Da Vinci Ristorante! A través de este link podrás hacer tu pedido vía delivery o pick-up.⁣ 🍽" target="__blank">
+      <div class="volver-arriba">
+        <i class="fab fa-whatsapp"></i>
+      </div>
+    </a>
+  </div>
+  <div class="boton-arriba-contenedor" id="actualizacion-contacto">
+    <a href="https://quikpago.com/store/showcase/products?market=RFs3QBxCCXleJiCD613D" target="_blank">
+      <div class="pedidos">
+        <img style="width: 5rem;" src="./img/boton-reserva_(1).png" alt="">
+        <span class="tooltip-">¡Solicita tu orden!
+        </span>
+      </div>
+    </a>
+  </div>
+  <div class="boton-arriba-contenedor" id="actualizacion-new-reserve">
+    <a href="https://api.whatsapp.com/send/?phone=584122994586&text&type=phone_number&app_absent=0&text=¡Bienvenido a nuestro ristorante! A través de acá podrás realizar la reservación para tu desayuno, almuerzo, cena o evento especial. ⁣ 🍽️" target="_blank">
+      <div class="pedidos----">
         <img style="width: 5rem;" src="./img/BOTON-RESERVE.png" alt="">
         <!-- <span class="tooltip-">¡Solicita tu orden! -->
         </span>
-      </div></a>
       </div>
-    <div class="boton-arriba-contenedor" id="actualizacion-contacto">
-      <a href="#sugerencias"><div class="pedidos--">
+    </a>
+  </div>
+  <div class="boton-arriba-contenedor" id="actualizacion-contacto">
+    <a href="#sugerencias">
+      <div class="pedidos--">
         <img style="width: 5rem;" src="./img/boton-reserva_(2).png" alt="">
         <span class="tooltip-2">¡Déjanos tus sugerencias!</span>
 
-      </div></a>
       </div>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg" style="justify-content:space-between !important;">
-            <a class="navbar-brand" href="#"><img style="width: 8rem;" src="./img/logo.png" alt=""></a>
-            <div class=" justify-content-end" >
-              <ul class="navbar-nav mr-auto">
-                <div class="hamburguer">
-                    <div class="bar">
-                        <span>MENÚ</span>
-                    </div>
-                  </div>
-              </ul>
+    </a>
+  </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg" style="justify-content:space-between !important;">
+      <a class="navbar-brand" href="#"><img style="width: 8rem;" src="./img/logo.png" alt=""></a>
+      <div class=" justify-content-end">
+        <ul class="navbar-nav mr-auto">
+          <div class="hamburguer">
+            <div class="bar">
+              <span>MENÚ</span>
             </div>
-            <div class=" justify-content-end">
-                <ul class="navbar-nav mr-auto">
-                  <!-- <div class="hamburguer">
+          </div>
+        </ul>
+      </div>
+      <div class=" justify-content-end">
+        <ul class="navbar-nav mr-auto">
+          <!-- <div class="hamburguer">
                       <div class="bar">
                       </div>
                     </div> -->
-                </ul>
-              </div>
-          </nav>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <header>
+    <div class="splide" id="splide" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img style="width: 100%;" src="./img/foto10.jpg" alt=""></li>
+          <li class="splide__slide"><img style="width: 100%;" src="./img/foto11.jpg" alt=""></li>
+          <li class="splide__slide"><img style="width: 100%;" src="./img/foto4.jpg" alt=""></li>
+          <li class="splide__slide"><img style="width: 100%;" src="./img/foto8.jpg" alt=""></li>
+          <li class="splide__slide"><img style="width: 100%;" src="./img/foto9.jpg" alt=""></li>
+
+        </ul>
+      </div>
     </div>
-    <header>
-      <div class="splide" id="splide" role="group" aria-label="Splide Basic HTML Example">
-        <div class="splide__track">
-          <ul class="splide__list">
-  <li class="splide__slide"><img style="width: 100%;" src="./img/foto10.jpg" alt=""></li>
-            <li class="splide__slide"><img style="width: 100%;" src="./img/foto11.jpg" alt=""></li>
-            <li class="splide__slide"><img style="width: 100%;" src="./img/foto4.jpg" alt=""></li>
-            <li class="splide__slide"><img style="width: 100%;" src="./img/foto8.jpg" alt=""></li>
-            <li class="splide__slide"><img style="width: 100%;" src="./img/foto9.jpg" alt=""></li>
-          
-          </ul>
+  </header>
+  <div class="boton">
+    <div class="container">
+      <button id="reproducir" onclick="reproducir()" style="color: white;">REPRODUCE VIDEO</button>
+      <button id="parar" class="none" onclick="pausar()">PARAR VIDEO</button>
+    </div>
+  </div>
+  <header>
+    <video class="none" id="video" src="./img/videoweb.mp4" style="width:100%" loop autoplay preload muted></video>
+  </header>
+  <main>
+    <section class="images-banner">
+      <div class="marquee">
+        <div class="marqueeScroll">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="imagen--" src="./img/ESPACIOS/1.jpg" loading="lazy" style="width: 24rem;" alt=""></button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1"> <img class="imagen--" src="./img/ESPACIOS/2.jpg" loading="lazy" style="width: 24rem;" alt=""></button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2"> <img class="imagen--" src="./img/ESPACIOS/3.jpg" loading="lazy" style="width: 24rem;" alt=""></button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="imagen--" src="./img/ESPACIOS/9.jpg" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+            <img src="./img/ESPACIOS/11.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+            <img src="./img/ESPACIOS/12.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+            <img src="./img/ESPACIOS/11.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+            <img src="./img/ESPACIOS/12.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            <img src="./img/ESPACIOS/10.jpg" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2"> <img class="imagen--" src="./img/ESPACIOS/3.jpg" loading="lazy" style="width: 24rem;" alt=""></button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img class="imagen--" src="./img/ESPACIOS/9.jpg" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            <img src="./img/ESPACIOS/10.jpg" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+            <img src="./img/ESPACIOS/11.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+            <img src="./img/ESPACIOS/12.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+            <img src="./img/ESPACIOS/13.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+            <img src="./img/ESPACIOS/14.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+            <img src="./img/ESPACIOS/15.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+            <img src="./img/ESPACIOS/16.jpg" class="imagen--" loading="lazy" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+            <img src="./img/ESPACIOS/12.jpg" loading="lazy" class="imagen--" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+            <img src="./img/ESPACIOS/13.jpg" loading="lazy" class="imagen--" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+            <img src="./img/ESPACIOS/15.jpg" loading="lazy" class="imagen--" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+            <img src="./img/ESPACIOS/16.jpg" loading="lazy" class="imagen--" style="width: 24rem;" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+            <img src="./img/PLATOS_2/1.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+            <img src="./img/PLATOS_2/2.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal13">
+            <img src="./img/PLATOS_2/5.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal14">
+            <img src="./img/PLATOS_2/8.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal15">
+            <img src="./img/PLATOS_2/9.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal16">
+            <img src="./img/PLATOS_2/10.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal17">
+            <img src="./img/PLATOS_2/11.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal18">
+            <img src="./img/PLATOS_2/12.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal19">
+            <img src="./img/PLATOS_2/13.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal20">
+            <img src="./img/PLATOS_2/14.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal21">
+            <img src="./img/PLATOS_2/15.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal22">
+            <img src="./img/PLATOS_2/16.jpg" loading="lazy" class="imagen--" style="width:24rem" alt="">
+          </button>
         </div>
       </div>
-    </header>
-    <div class="boton">
-        <div class="container">
-            <button id="reproducir" onclick="reproducir()" style="color: white;">REPRODUCE VIDEO</button>
-            <button id="parar" class="none" onclick="pausar()">PARAR VIDEO</button>
-        </div>
-    </div>
-    <header>
-        <video class="none"  id="video" src="./img/videoweb.mp4" style="width:100%" loop autoplay preload muted></video> 
-    </header>
-    <main>
-        <section class="images-banner">
-            <div class="marquee">
-                <div class="marqueeScroll">
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"><img  class="imagen--"src="./img/ESPACIOS/1.jpg" loading="lazy" style="width: 24rem;" alt=""></button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal1"> <img class="imagen--" src="./img/ESPACIOS/2.jpg" loading="lazy"   style="width: 24rem;" alt=""></button>  
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal2"> <img class="imagen--" src="./img/ESPACIOS/3.jpg" loading="lazy"   style="width: 24rem;" alt=""></button>  
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3"><img  class="imagen--"src="./img/ESPACIOS/9.jpg" loading="lazy"   style="width: 24rem;" alt="">
-                    </button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                      <img src="./img/ESPACIOS/11.jpg" class="imagen--" loading="lazy"  style="width: 24rem;" alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                      <img src="./img/ESPACIOS/12.jpg" class="imagen--" loading="lazy"   style="width: 24rem;" alt="">
-                    </button>  
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                      <img src="./img/ESPACIOS/11.jpg" class="imagen--" loading="lazy"  style="width: 24rem;" alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                      <img src="./img/ESPACIOS/12.jpg" class="imagen--" loading="lazy"   style="width: 24rem;" alt="">
-                    </button>  
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                      <img src="./img/ESPACIOS/10.jpg" loading="lazy"   style="width: 24rem;" alt="">
-                    </button>    
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal2"> <img class="imagen--" src="./img/ESPACIOS/3.jpg" loading="lazy"   style="width: 24rem;" alt=""></button>  
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3"><img  class="imagen--"src="./img/ESPACIOS/9.jpg" loading="lazy"   style="width: 24rem;" alt="">
-                    </button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                      <img src="./img/ESPACIOS/10.jpg" loading="lazy"   style="width: 24rem;" alt="">
-                    </button>    
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                      <img src="./img/ESPACIOS/11.jpg" class="imagen--" loading="lazy"  style="width: 24rem;" alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                      <img src="./img/ESPACIOS/12.jpg" class="imagen--" loading="lazy"   style="width: 24rem;" alt="">
-                    </button>  
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal7">
-                      <img src="./img/ESPACIOS/13.jpg"  class="imagen--"loading="lazy"   style="width: 24rem;" alt="">
-                    </button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal8">
-                      <img src="./img/ESPACIOS/14.jpg" class="imagen--" loading="lazy"   style="width: 24rem;" alt="">
-                    </button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal9">
-                      <img src="./img/ESPACIOS/15.jpg" class="imagen--" loading="lazy"   style="width: 24rem;" alt="">
-                    </button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal10">
-                      <img src="./img/ESPACIOS/16.jpg" class="imagen--" loading="lazy"   style="width: 24rem;" alt="">
-                    </button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                      <img src="./img/ESPACIOS/12.jpg" loading="lazy" class="imagen--"  style="width: 24rem;" alt="">
-                    </button>  
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal7">
-                      <img src="./img/ESPACIOS/13.jpg" loading="lazy"class="imagen--"   style="width: 24rem;" alt="">
-                    </button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal9">
-                      <img src="./img/ESPACIOS/15.jpg" loading="lazy"class="imagen--"   style="width: 24rem;" alt="">
-                    </button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal10">
-                      <img src="./img/ESPACIOS/16.jpg" loading="lazy"class="imagen--"   style="width: 24rem;" alt="">
-                    </button> 
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal11">
-                      <img src="./img/PLATOS_2/1.jpg" loading="lazy" class="imagen--"  style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal12">
-                      <img src="./img/PLATOS_2/2.jpg" loading="lazy" class="imagen--"  style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal13">
-                      <img src="./img/PLATOS_2/5.jpg" loading="lazy" class="imagen--"  style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal14">
-                      <img src="./img/PLATOS_2/8.jpg" loading="lazy"  class="imagen--"  style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal15">
-                      <img src="./img/PLATOS_2/9.jpg" loading="lazy" class="imagen--"   style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal16">
-                      <img src="./img/PLATOS_2/10.jpg" loading="lazy" class="imagen--"   style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal17">
-                      <img src="./img/PLATOS_2/11.jpg" loading="lazy" class="imagen--"   style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal18">
-                      <img src="./img/PLATOS_2/12.jpg" loading="lazy" class="imagen--"   style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal19">
-                      <img src="./img/PLATOS_2/13.jpg" loading="lazy" class="imagen--"   style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal20">
-                      <img src="./img/PLATOS_2/14.jpg" loading="lazy"  class="imagen--"  style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal21">
-                      <img src="./img/PLATOS_2/15.jpg" loading="lazy" class="imagen--"   style="width:24rem"alt="">
-                  </button>
-                  <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal22">
-                      <img src="./img/PLATOS_2/16.jpg" loading="lazy" class="imagen--"   style="width:24rem"alt="">
-                  </button>
-                </div>
+    </section>
+    <section id="nosotros" class="nosotros">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="title">
+              <h2>Nosotros</h2>
             </div>
-        </section>
-        <section id="nosotros" class="nosotros">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="title">
-                            <h2>Nosotros</h2>
-                        </div>
-                        <p class="nosotros-p">Iniciamos operaciones en el año 1996 con el objetivo de presentar al público marabino una propuesta diferente a la oferta rígida y conservadora de cocina italiana en ese momento, aprovechando la oportunidad de introducir un concepto que permitiese a nuestros clientes combinar, por ejemplo, cualquiera de nuestras salsas con las pastas de sus preferencias; además de desarrollar un menú que permitiera encontrar en un solo lugar los platos más emblemáticos de Italia, desde los clásicos antipastos, pastas y pizzas hasta la bodega de vinos y pastelería típica, adaptados a las necesidades de consumo de esta ciudad.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="vision">
-            <div class="row">
-                <div class="col-xl-6 col-especial" id="vision">
-                    <div class="fondo-vision" >
-                        <div class="texto-vision">
-                          <div class="vision-texto"> 
-                            <img  src="./img/vision_02.png" alt="">
-                          </div>
-                          <p>Ser el restaurante ícono de referencia de la gastronomía italiana en la ciudad, posicionando nuestra marca para lograr transmitir a nuestros clientes y proveedores seriedad, seguridad y respaldo en todo momento.</p>
-                          <div class="mision-texto">
-                            <img class="mision-texto" src="./img/mision_02.png" alt="">
-                          </div>
-                          <p>Ofrecer a nuestros clientes una selecta variedad de platos de la gastronomía italiana, adaptando sus gustos y exigencias a través de la innovación y un servicio orientado a la excelencia, caracterizado por una atención cordial, oportuna y eficiente, en un ambiente lleno confort y calidez que permite a nuestros visitantes sentirse como en casa.</p>
-                          </div>
-                      
-                    </div>
-                </div>
-                <div class="col-xl-6 col-especial" id="visione">
-                    <div class="luces">
-                        <img src="./img/luces.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="market">
-            <img src="./img/market.jpg" style="width:100%" alt="">
-        </section>
-        <section class="promo">
-          <div class="promos">
-            <img src="./img/promo1.png" alt="">
-            <img src="./img/promo2.png" alt="">
-            <img src="./img/promo3.png" alt="">
-            <img src="./img/promo4.png" alt="">
+            <p class="nosotros-p">Iniciamos operaciones en el año 1996 con el objetivo de presentar al público marabino una propuesta diferente a la oferta rígida y conservadora de cocina italiana en ese momento, aprovechando la oportunidad de introducir un concepto que permitiese a nuestros clientes combinar, por ejemplo, cualquiera de nuestras salsas con las pastas de sus preferencias; además de desarrollar un menú que permitiera encontrar en un solo lugar los platos más emblemáticos de Italia, desde los clásicos antipastos, pastas y pizzas hasta la bodega de vinos y pastelería típica, adaptados a las necesidades de consumo de esta ciudad.</p>
           </div>
-        </section>
-        <section id="sugerencias" class="contact-zone">
-          <div class="container">
-              <!-- <div class="timbre">
+        </div>
+      </div>
+    </section>
+    <section class="vision">
+      <div class="row">
+        <div class="col-xl-6 col-especial" id="vision">
+          <div class="fondo-vision">
+            <div class="texto-vision">
+              <div class="vision-texto">
+                <img src="./img/vision_02.png" alt="">
+              </div>
+              <p>Ser el restaurante ícono de referencia de la gastronomía italiana en la ciudad, posicionando nuestra marca para lograr transmitir a nuestros clientes y proveedores seriedad, seguridad y respaldo en todo momento.</p>
+              <div class="mision-texto">
+                <img class="mision-texto" src="./img/mision_02.png" alt="">
+              </div>
+              <p>Ofrecer a nuestros clientes una selecta variedad de platos de la gastronomía italiana, adaptando sus gustos y exigencias a través de la innovación y un servicio orientado a la excelencia, caracterizado por una atención cordial, oportuna y eficiente, en un ambiente lleno confort y calidez que permite a nuestros visitantes sentirse como en casa.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xl-6 col-especial" id="visione">
+          <div class="luces">
+            <img src="./img/luces.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="market">
+      <img src="./img/market.jpg" style="width:100%" alt="">
+    </section>
+    <section class="promo">
+      <div class="promos">
+        <img src="./img/promo1.png" alt="">
+        <img src="./img/promo2.png" alt="">
+        <img src="./img/promo3.png" alt="">
+        <img src="./img/promo4.png" alt="">
+      </div>
+    </section>
+    <section id="sugerencias" class="contact-zone">
+      <div class="container">
+        <!-- <div class="timbre">
                   <img src="./img/timbre.png" alt="">
               </div> -->
-              <h2 class="text-center">¡Déjanos tu sugerencia!</h2>
-              <form class="formulario-email" action="https://formsubmit.co/Rrhhmdn@gmail.com" method="POST">
-                <input type="text" placeholder="Nombre y apellido" >
-              <input type="email" placeholder="Email" >
-              <input type="number" placeholder="Número de teléfono" >
-                <textarea name="" placeholder="Escribe tu sugerencia" id="" cols="30" rows="10"></textarea>
-                <button type="submit">Enviar</button>
-              </form>
-              <div  class="encuesta">
-               <a href="https://forms.gle/PqwC8nW8tbw3eXgD9"><button>COMPLETA NUESTRA ENCUESTA DE SATISFACCIÓN DE SERVICIO</button></a> 
-              </div>
-          </div>
-        <section id="contacto" class="contact-zone">
-            <div class="container">
-                <!-- <div class="timbre">
+        <h2 class="text-center">¡Déjanos tu sugerencia!</h2>
+        <form class="formulario-email" action="https://formsubmit.co/Rrhhmdn@gmail.com" method="POST">
+          <input type="text" placeholder="Nombre y apellido">
+          <input type="email" placeholder="Email">
+          <input type="number" placeholder="Número de teléfono">
+          <textarea name="" placeholder="Escribe tu sugerencia" id="" cols="30" rows="10"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="encuesta">
+          <a href="https://forms.gle/PqwC8nW8tbw3eXgD9"><button>COMPLETA NUESTRA ENCUESTA DE SATISFACCIÓN DE SERVICIO</button></a>
+        </div>
+      </div>
+      <section id="contacto" class="contact-zone">
+        <div class="container">
+          <!-- <div class="timbre">
                     <img src="./img/timbre.png" alt="">
                 </div> -->
-            </div>
+        </div>
 
-            <div class="title-contact text-center">
-                <h2 style="font-size: 2rem;">Puedes visitar nuestro ristorante</h2>
-                <span style="font-size: 2rem;">en el siguiente horario</span>
+        <div class="title-contact text-center">
+          <h2 style="font-size: 2rem;">Puedes visitar nuestro ristorante</h2>
+          <span style="font-size: 2rem;">en el siguiente horario</span>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center" style="margin-top: 4rem;">
+            <div class="col-xl-4 text-center">
+              <span style="font-size: 1.4rem; color:white " class="horario">DOMINGO A JUEVES</span> <br>
+              <span style="font-size: 1rem;">7:30 a.m - 10:00 p.m</span>
             </div>
-            <div class="container">
-                <div class="row" style="margin-top: 4rem;">
-                    <div class="col-xl-4 text-center">
-                        <span class="horario" style="font-size: 1.4rem; color:white ">LUNES Y MARTES</span> <br>
-                        <span  style="font-size: 1rem;">7:30 a.m - 5:00 p.m</span>
-                    </div>
-                    <div class="col-xl-4 text-center">
-                        <span style="font-size: 1.4rem; color:white " class="horario">MIÉRCOLES Y DOMINGO</span> <br>
-                        <span style="font-size: 1rem;">7:30 a.m - 5:00 p.m</span>
-                    </div>
-                    <div class="col-xl-4 text-center">
-                        <span style="font-size: 1.4rem; color:white " class="horario">JUEVES Y SÁBADO</span> <br>
-                        <span style="font-size: 1rem;">7:30 a.m - 5:00 p.m</span>
-                    </div>
-                </div>
-                <div class="row" style="align-items: center; margin-top: 4rem;">
-                    <div class="col-xl-6">
-                        <div style="height:400px; width:100%; display:inline-block; overflow:hidden;">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=18ixnfWbUF3a-Y9AaaneI_nILt_xj81M&hl=es&ehbc=2E312F"style="position:relative; top:-70px; border:none;" width="640" height="480"
-                            ></iframe>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="ubicacion text-center">
-                            <h2>Estamos ubicados en</h2> 
-                            <h2>Maracaibo, edo. Zulia</h2>
-                            <span style="color: white;" class="horario">Puedes visitarnos en cualquiera de nuestras sedes</span>
-                        </div>
-                        <div class="direccion text-center">
-                            <span>Ristorante: av. 11 entre calle 75 y 76</span>
-                            <span>Café Maraplus: av. 4 Bella vista con calle 74, dentro de farmacia Maraplus</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 4rem;">
-                    <div class="col-xl-4" style="display: flex; justify-content: center;">
-                      <a class="youtube" style="position: relative; left:2rem;" href="https://www.youtube.com/channel/UCRuQdtUVK3lYBx3yplDv7_g?app=desktop"  target="_blank"> <img src="./img/youtube.png" alt=""></a>
-                     <a  class="redes-sociales-image-primero" target="_blank" href="https://es-la.facebook.com/DaVinciRestaurante/"> <img src="./img/facebook.png" alt=""></a>  
-                    </div>
-                    <div class="col-xl-4">
-                     <a class="redes-sociales-image" target="_blank" href="https://www.instagram.com/davincimcbo/"> <img src="./img/redSocial2.png" alt=""></a>
-                    </div>
-                    <div class="col-xl-4">
-                       <a  class="redes-sociales-image"target="_blank" href="https://www.tiktok.com/@grupodavinci"><img src="./img/redSocial3.png" alt=""></a> 
-                    </div>
-                </div>
+            <div class="col-xl-4 text-center mt-4 mt-xl-0">
+              <span style="font-size: 1.4rem; color:white " class="horario">VIERNES Y SÁBADO</span> <br>
+              <span style="font-size: 1rem;">7:30 a.m - 11:00 p.m</span>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-texto">
-            <span>2022, DaVinciRestaurante | Copyright © Desarrollado por <a target="_blank" href="https://mdnpublicidad.com/" >MDN PUBLICIDAD</a></span>
           </div>
-    </footer>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row" style="align-items: center; margin-top: 4rem;">
+            <div class="col-xl-6">
+              <div style="height:400px; width:100%; display:inline-block; overflow:hidden;">
+                <iframe src="https://www.google.com/maps/d/embed?mid=18ixnfWbUF3a-Y9AaaneI_nILt_xj81M&hl=es&ehbc=2E312F" style="position:relative; top:-70px; border:none;" width="640" height="480"></iframe>
+              </div>
             </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/1.jpg" style="width:100%;" alt="">
+            <div class="col-xl-6">
+              <div class="ubicacion text-center">
+                <h2>Estamos ubicados en</h2>
+                <h2>Maracaibo, edo. Zulia</h2>
+                <span style="color: white;" class="horario">Puedes visitarnos en cualquiera de nuestras sedes</span>
+              </div>
+              <div class="direccion text-center">
+                <span>Ristorante: av. 11 entre calle 75 y 76</span>
+                <span>Café Maraplus: av. 4 Bella vista con calle 74, dentro de farmacia Maraplus</span>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 4rem;">
+            <div class="col-xl-4" style="display: flex; justify-content: center;">
+              <a class="youtube" style="position: relative; left:2rem;" href="https://www.youtube.com/channel/UCRuQdtUVK3lYBx3yplDv7_g?app=desktop" target="_blank"> <img src="./img/youtube.png" alt=""></a>
+              <a class="redes-sociales-image-primero" target="_blank" href="https://es-la.facebook.com/DaVinciRestaurante/"> <img src="./img/facebook.png" alt=""></a>
+            </div>
+            <div class="col-xl-4">
+              <a class="redes-sociales-image" target="_blank" href="https://www.instagram.com/davincimcbo/"> <img src="./img/redSocial2.png" alt=""></a>
+            </div>
+            <div class="col-xl-4">
+              <a class="redes-sociales-image" target="_blank" href="https://www.tiktok.com/@grupodavinci"><img src="./img/redSocial3.png" alt=""></a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/2.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+      </section>
+  </main>
+  <footer>
+    <div class="footer-texto">
+      <span>2022, DaVinciRestaurante | Copyright © Desarrollado por <a target="_blank" href="https://mdnpublicidad.com/">MDN PUBLICIDAD</a></span>
+    </div>
+  </footer>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/1.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/3.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/2.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/9.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/3.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/10.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/9.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/11.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/10.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/12.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/11.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/13.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/12.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/14.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/13.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/15.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/14.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/ESPACIOS/16.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/15.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/1.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/ESPACIOS/16.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/2.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/1.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/5.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/2.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/8.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/5.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/9.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/8.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/10.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/9.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/11.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/10.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/12.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/11.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/13.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/12.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/14.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/13.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/15.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/14.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/PLATOS_2/16.jpg" style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/15.jpg" style="width:100%;" alt="">
         </div>
       </div>
-      <div class="modal fade" id="exampleModa600" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="./img/precio1.webp" loading="lazy"  style="width:100%;" alt="">
-              <img src="./img/precio2.webp" loading="lazy"  style="width:100%;" alt="">
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/PLATOS_2/16.jpg" style="width:100%;" alt="">
         </div>
       </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModa600" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/MENU/menu1.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu2.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu3.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu4.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu5.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu6.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu7.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu8.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu9.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu10.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu11.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/menu12.webp" loading="lazy" style="width:100%;" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
-<audio hidden controls="" autoplay >
-  <source src="./italianmusic.mp3" type="audio/ogg"   >
+<audio hidden controls="" autoplay>
+  <source src="./italianmusic.mp3" type="audio/ogg">
   Tu navegador no soporta el elemento "audio".
 </audio>
 <script src="./js/video.js"></script>
@@ -634,4 +648,5 @@
 <script src="./js/hamburguerMenu.js"></script>
 <script src="./js/scrollreveal.js"></script>
 <script src="./js/scroll.js"></script>
+
 </html>
