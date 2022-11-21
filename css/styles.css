@@ -479,7 +479,7 @@ textarea {
 #reproducir {
   position: absolute;
   bottom: 50%;
-  right: 3%;
+  right: 10%;
   padding: 0.5rem;
   background: transparent;
   border-radius: 1.4rem;
@@ -490,7 +490,7 @@ textarea {
 #parar {
   position: absolute;
   bottom: 50%;
-  right: 3%;
+  right: 10%;
   padding: 0.5rem;
   background: transparent;
   border-radius: 1.4rem;
