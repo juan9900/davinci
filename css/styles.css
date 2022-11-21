@@ -9,6 +9,10 @@ body {
 span {
   color: #1c0404;
 }
+
+.navbar-brand img {
+  border-radius: 100%;
+}
 .navbar-expand-lg {
   width: 90% !important;
   position: absolute; /* TODO: ESTE TIENE QUE SER ABSOLUTE */
@@ -72,6 +76,28 @@ span {
   /* display: block; */
   left: 0;
 }
+
+.redes-container {
+  position: fixed;
+  z-index: 99999;
+  bottom: 5%;
+  left: 1%;
+}
+
+.social {
+  margin: 0.5rem 0;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+.social img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 #menu-restaurant {
   display: block;
   /* margin: 0 auto 16px; */
@@ -123,13 +149,22 @@ span {
   z-index: 1;
 }
 
+.boton-whatsapp {
+  position: fixed;
+  bottom: 3.5rem;
+  right: 4rem;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 1;
+}
+
 .volver-arriba {
   width: 4rem;
   height: 4rem;
   background-color: #7d2e25;
   border-radius: 50%;
   cursor: pointer;
-  top: 60%;
+  top: 80%;
   position: relative;
   left: 7.4rem;
   transition: 0.2s;
@@ -287,7 +322,7 @@ span {
 }
 .pedidos {
   position: relative;
-  top: -3rem;
+  top: -1.5rem;
   left: 5rem;
 }
 button {
@@ -314,7 +349,7 @@ button {
   background: rgb(125, 46, 37);
   color: white;
   position: fixed;
-  bottom: 9.5rem;
+  bottom: 8rem;
   right: 6rem;
   padding: 0.8rem;
   display: none;
@@ -322,6 +357,24 @@ button {
   font-family: "Galderglynn TitlingRg Bold";
   font-weight: 900;
   font-size: 1.2rem;
+}
+
+.tooltip-3 {
+  background: rgb(125, 46, 37);
+  color: white;
+  position: fixed;
+  bottom: 3.1rem;
+  right: 6rem;
+  padding: 0.8rem;
+  display: none;
+  z-index: 99999999;
+  font-family: "Galderglynn TitlingRg Bold";
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.boton-whatsapp:hover .tooltip-3 {
+  display: block;
 }
 .boton-arriba-contenedor:hover .tooltip- {
   display: block;
@@ -330,7 +383,7 @@ button {
   background: rgb(125, 46, 37);
   color: white;
   position: fixed;
-  bottom: 14.5rem;
+  bottom: 13rem;
   right: 6rem;
   padding: 0.8rem;
   display: none;
@@ -339,7 +392,7 @@ button {
   font-weight: 900;
   font-size: 1.2rem;
 }
-.boton-arriba-contenedor:hover .tooltip-2 {
+.pedidos--:hover .tooltip-2 {
   display: block;
 }
 .formulario-email input,
@@ -369,12 +422,12 @@ textarea {
 .pedidos-- {
   position: relative;
   left: 5rem;
-  top: -8rem;
+  top: -6.5rem;
 }
 .pedidos---- {
   position: relative;
   left: 5rem;
-  top: -13rem;
+  top: -12rem;
 }
 .contact-zone {
   background-image: url("../img/patronnuevo.jpg");
@@ -447,9 +500,24 @@ textarea {
   display: block;
 }
 .hamburger-container {
-  background-color: #eed8c0;
+  /* background-color: #eed8c0;
   padding: 0.2rem 0.7rem;
   border-radius: 10px;
+  cursor: pointer;
+  position: ;
+  top: 50%;
+  right: 5%;
+  z-index: 9999;
+  display: block; */
+  position: fixed;
+  top: 5%;
+  right: 1.1rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  z-index: 1;
+  background-color: #eed8c0;
+  border-radius: 100%;
+  z-index: 999999;
   cursor: pointer;
 }
 .hamburguer .bar,
@@ -496,7 +564,6 @@ textarea {
   border-radius: 1.4rem;
   color: #5c1911;
   border: 2px solid #5c1911;
-  z-index: 9999999999;
 }
 .timbre {
   text-align: right;
@@ -508,6 +575,16 @@ textarea {
   width: 23rem;
 }
 @media screen and (max-width: 700px) {
+  .hamburger-container {
+    top: 3%;
+  }
+  .redes-container {
+    left: 2%;
+  }
+  .social img {
+    width: 3rem;
+    height: 3rem;
+  }
   .width {
     width: 38%;
   }
@@ -516,9 +593,6 @@ textarea {
   }
   .title {
     margin-top: 2rem;
-  }
-  .hamburguer {
-    /* transform: translateX(95px); */
   }
   .navbar-brand img {
     width: 5rem !important;
@@ -599,6 +673,9 @@ textarea {
     font-size: 2rem;
   }
   #reproducir {
+    bottom: 47%;
+  }
+  #parar {
     bottom: 47%;
   }
   .navbar-brand {
