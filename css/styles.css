@@ -80,7 +80,7 @@ span {
 .redes-container {
   position: fixed;
   z-index: 99999;
-  bottom: 5%;
+  bottom: 1%;
   left: 1%;
 }
 
@@ -91,8 +91,8 @@ span {
 }
 
 .social img {
-  width: 4rem;
-  height: 4rem;
+  width: 2.8rem;
+  height: 2.8rem;
   border-radius: 100%;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -509,9 +509,10 @@ textarea {
   right: 5%;
   z-index: 9999;
   display: block; */
+  border: 2px solid #5c1911;
   position: fixed;
   top: 5%;
-  right: 1.1rem;
+  right: 1%;
   width: 4.2rem;
   height: 4.2rem;
   z-index: 1;
@@ -546,24 +547,28 @@ textarea {
 }
 #reproducir {
   position: absolute;
-  bottom: 50%;
+  top: 6.8%;
   right: 10%;
   padding: 0.5rem;
   background: transparent;
   border-radius: 1.4rem;
   color: #5c1911 !important;
+  background-color: #eed8c0;
   border: 2px solid #5c1911;
+  z-index: 1;
 }
 
 #parar {
   position: absolute;
-  bottom: 50%;
+  top: 6.8%;
   right: 10%;
   padding: 0.5rem;
   background: transparent;
   border-radius: 1.4rem;
   color: #5c1911;
+  background-color: #eed8c0;
   border: 2px solid #5c1911;
+  z-index: 1;
 }
 .timbre {
   text-align: right;
@@ -577,6 +582,7 @@ textarea {
 @media screen and (max-width: 700px) {
   .hamburger-container {
     top: 3%;
+    right: 5%;
   }
   .redes-container {
     left: 2%;
@@ -617,12 +623,9 @@ textarea {
   .footer-texto {
     text-align: center;
   }
-  #parar {
+  /* #parar {
     bottom: 84%;
-  }
-  #reproducir {
-    bottom: 27%;
-  }
+  } */
   .width:hover {
     width: 50%;
   }
@@ -652,6 +655,11 @@ textarea {
   .modal-dialog {
     width: 50%;
   }
+
+  #parar,
+  #reproducir {
+    right: 10%;
+  }
 }
 @media screen and (min-width: 1500px) {
   .marquee {
@@ -672,12 +680,10 @@ textarea {
   .title h2 {
     font-size: 2rem;
   }
-  #reproducir {
+
+  /* #parar {
     bottom: 47%;
-  }
-  #parar {
-    bottom: 47%;
-  }
+  } */
   .navbar-brand {
     /* margin-left: -6rem; */
   }
@@ -695,11 +701,18 @@ textarea {
   }
 }
 
+@media screen and (max-width: 900px) {
+  #reproducir,
+  #parar {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .navbar-expand-lg {
     width: 80% !important;
     position: absolute; /* TODO: ESTE TIENE QUE SER ABSOLUTE */
-    z-index: 9;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1023px) {
@@ -715,9 +728,9 @@ textarea {
   .contact-zone {
     text-align: center;
   }
-  #parar {
+  /* #parar {
     bottom: 77%;
-  }
+  } */
   #visione {
     width: inherit;
   }
