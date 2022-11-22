@@ -513,11 +513,11 @@ textarea {
   position: fixed;
   top: 5%;
   right: 1%;
-  width: 4.2rem;
+  width: 7.2rem;
   height: 4.2rem;
   z-index: 1;
   background-color: #eed8c0;
-  border-radius: 100%;
+  border-radius: 10px;
   z-index: 999999;
   cursor: pointer;
 }
@@ -548,7 +548,7 @@ textarea {
 #reproducir {
   position: absolute;
   top: 6.8%;
-  right: 10%;
+  right: 15%;
   padding: 0.5rem;
   background: transparent;
   border-radius: 1.4rem;
@@ -561,7 +561,7 @@ textarea {
 #parar {
   position: absolute;
   top: 6.8%;
-  right: 10%;
+  right: 15%;
   padding: 0.5rem;
   background: transparent;
   border-radius: 1.4rem;
@@ -583,6 +583,8 @@ textarea {
   .hamburger-container {
     top: 3%;
     right: 5%;
+    width: 4.2rem;
+    border-radius: 100%;
   }
   .redes-container {
     left: 2%;
@@ -658,7 +660,7 @@ textarea {
 
   #parar,
   #reproducir {
-    right: 10%;
+    right: 13%;
   }
 }
 @media screen and (min-width: 1500px) {
