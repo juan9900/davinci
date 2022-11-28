@@ -410,6 +410,9 @@ textarea {
   color: white;
 }
 
+.input-group-text {
+  border: none;
+}
 .subscribed-text {
   font-size: 2.5em;
 }
