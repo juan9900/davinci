@@ -15,13 +15,20 @@ var timerCloseAlert;
 
 // Enviar suscripcion al club forno
 $('#club-form').on('submit',(e) => {
-    console.log('submitted');
+    firstName = $('#firstName').val();
+    lastName = $('#lastName').val();
+    email = $('#email').val();
+    phoneNumber = $('#phoneNumber').val();
     e.preventDefault();
-    console.log($('#club-form').serialize());
     $.ajax({
         type: "POST",
-        url: 'modules/addClient.php',
-        data: $('#club-form').serialize(),
+        url: '/modules/addClient.php',
+        data: {
+            firstName,
+            lastName,
+            email,
+            phoneNumber
+        },
         dataType: 'json',
         success: (data) => {
             console.log(data);

@@ -48,7 +48,7 @@ $(document).on('click','#btn-delete-confirm',(e) => {
         if(response.result === 'success'){
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            const page = urlParams.get('page')
+            const page = urlParams.get('page');
             window.location.replace(`dashboardIndex.php?page=${page}`);
 
         }
