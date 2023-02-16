@@ -11,15 +11,15 @@
   <meta name="Resource-type" content="Document">
   <meta name="Revisit-after" content="2 days">
   <meta name="robots" content="All">
-  <title>DaVinci</title>
+  <title>Da Vinci</title>
   <meta charset="utf-8">
   <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://kit.fontawesome.com/819330974d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css/splide.min.css">
 </head>
 
 <body>
@@ -27,12 +27,12 @@
     <div class="container d-flex flex-column align-items-end mobile-nav-container">
       <a href="#">INICIO</a>
       <button type="button" id="menu-restaurant" data-bs-toggle="modal" data-bs-target="#exampleModa600">
-        MENU/RESTAURANT
+        MENÚ / RESTAURANT
       </button>
       <a href="https://api.whatsapp.com/send/?phone=584122994586&type=phone_number&app_absent=0&text=%C2%A1Bienvenido%20a%20nuestro%20ristorante%21%20A%20trav%C3%A9s%20de%20ac%C3%A1%20podr%C3%A1s%20realizar%20la%20reservaci%C3%B3n%20para%20tu%20desayuno%2C%20almuerzo%2C%20cena%20o%20evento%C2%A0especial.%C2%A0%E2%81%A3%20%F0%9F%8D%BD%EF%B8%8F" target="__blank">RESERVAS</a>
       <a href="#nosotros">NOSOTROS</a>
-      <a href="#sugerencias">SUGERENCIAS</a>
-      <a href="#contacto">CONTACTO</a>
+      <a href="#sugerencias">CLUB DA VINCI</a>
+      <a href="#contacto">UBÍCANOS</a>
     </div>
   </nav>
   <div class="boton-whatsapp">
@@ -66,7 +66,7 @@
     <a href="#sugerencias">
       <div class="pedidos--">
         <img style="width: 5rem;" src="./img/boton-reserva_(2).png" alt="">
-        <span class="tooltip-2">¡Únete al club Davinci!</span>
+        <span class="tooltip-2">¡Únete al club Da Vinci!</span>
 
       </div>
     </a>
@@ -257,21 +257,59 @@
     <section class="market">
       <img src="./img/market.jpg" style="width:100%" alt="">
     </section>
-    <section class="promo">
-      <div class="promos">
-        <img src="./img/promoNueva1.png" alt="">
-        <img src="./img/promoNueva2.png" alt="">
-        <img src="./img/promoNueva3.png" alt="">
-        <img src="./img/promoNueva4.png" alt="">
-        <img src="./img/promoNueva5.png" alt="">
-        <img src="./img/promoNueva6.png" alt="">
-        <img src="./img/promoNueva7.png" alt="">
-        <img src="./img/promoNueva8.png" alt="">
-      </div>
-      <div class="promos">
+    <section id="section-promos" class="pt-5">
+      <div id="card-slider" class="splide" aria-labelledby="carousel-heading">
+        <h2 class="text-center pb-4">PROMOCIONES</h2>
 
+        <div class="splide__track promos-container">
+          <ul class="splide__list promos-list">
+            <li class="splide__slide">
+              <div class="splide__slide__container promo">
+                <img src="/img/PROMOS/promo1.png" alt="Promoción 3x2 en todas nuestras pizzas de domingo a jueves desde las 5:00 P.M.">
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container promo">
+                <img src="/img/PROMOS/promo2.png" alt="Promo Buon Giorno de lunes a domingo desde 7:30 A.M. a 11:30 A.M">
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container promo">
+                <img src="/img/PROMOS/promo3.png" alt="Promo Vieni A Tavola. 7 opciones de pastas clásicas">
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container promo">
+                <img src="/img/PROMOS/promo8.png" alt="Promo Clásicos Gourmet">
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container promo">
+                <img src="/img/PROMOS/promo4.png" alt="Promo Clásicos Gourmet 1">
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container promo">
+                <img src="/img/PROMOS/promo5.png" alt="Promo Clásicos Gourmet 2">
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container promo">
+                <img src="/img/PROMOS/promo6.png" alt="Promo Clásicos Gourmet 3">
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container promo">
+                <img src="/img/PROMOS/promo7.png" alt="Promo Clásicos Gourmet 4">
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
+
+
+
     <section id="sugerencias" class="contact-zone">
       <div class="container">
         <div class="club-form-container">
@@ -280,7 +318,7 @@
           <!-- <div class="timbre">
                     <img src="./img/timbre.png" alt="">
                 </div> -->
-          <h2 class="text-center mb-4 mb-lg-4">¡Únete al Club DaVinci!</h2>
+          <h2 class="text-center mb-4 mb-lg-4">¡Únete al Club Da Vinci!</h2>
           <div class="col-11 col-lg-10 mb-3 m-auto" id="liveAlertPlaceholder"></div>
           <form class="formulario-email col-lg-10  col-11 m-auto" id="club-form">
 
@@ -303,7 +341,12 @@
               <input type="text" class="phone-input form-control mt-0" placeholder="Número de teléfono" name="phoneNumber" id="phoneNumber">
 
             </div>
-
+            <div class="input-group mb-3 d-flex flex-row align-items-center">
+              <!-- <span class="input-group-text">+58</span> -->
+              <!-- <input class="" type="number" name="phoneNumber" id="phoneNumber" placeholder="Número de teléfono"> -->
+              <label class="birthday-label pe-1" for="birthdate">Fecha de nacimiento: </label>
+              <input type="date" id="birthdate" required max="">
+            </div>
             <div class="encuesta">
               <button type="submit">Unirme</button>
 
@@ -312,7 +355,7 @@
 
         </div>
 
-        <h2 class="text-center mb-0 pb-5 subscribed-text d-none">¡Te has registrado con éxito en el <br> Club Davinci!</h2>
+        <h2 class="text-center mb-0 pb-5 subscribed-text d-none">¡Te has registrado con éxito en el <br> Club Da Vinci!</h2>
         <div class="encuesta">
           <a href="https://forms.gle/PqwC8nW8tbw3eXgD9"><button>COMPLETA NUESTRA ENCUESTA DE SATISFACCIÓN DE SERVICIO</button></a>
         </div>
@@ -352,8 +395,9 @@
                 <span style="color: white;" class="horario">Puedes visitarnos en cualquiera de nuestras sedes</span>
               </div>
               <div class="direccion text-center">
-                <span>Ristorante: av. 11 entre calle 75 y 76</span>
-                <span>Café Maraplus: av. 4 Bella vista con calle 74, dentro de farmacia Maraplus</span>
+                <span>Da Vinci Ristorante. Sede Principal: Av. 11 entre calle 75 y 76. Maracaibo</span>
+                <span>Da Vinci Café. Sede Bella Vista: Av. 4 Bella vista con calle 74, dentro de farmacia Maraplus</span>
+                <span>Da Vinci Café. Sede Norte: Calle 43 Av. 15 Urb. Rosal Sur, sector Fuerzas Armadas</span>
               </div>
             </div>
           </div>
@@ -374,7 +418,7 @@
   </main>
   <footer>
     <div class="footer-texto">
-      <span>2022, DaVinciRestaurante | Copyright © Desarrollado por <a target="_blank" href="https://mdnpublicidad.com/">MDN PUBLICIDAD</a></span>
+      <span>2022, Da Vinci Restaurante | Copyright © Desarrollado por <a target="_blank" href="https://mdnpublicidad.com/">MDN PUBLICIDAD</a></span>
     </div>
   </footer>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -660,18 +704,18 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="./img/MENU/menu1.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu2.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu3.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu4.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu5.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu6.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu7.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu8.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu9.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu10.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu11.webp" loading="lazy" style="width:100%;" alt="">
-          <img src="./img/MENU/menu12.webp" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-01.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-03.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-04.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-05.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-06.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-07.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-08.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-09.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-10.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-11.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-12.png" loading="lazy" style="width:100%;" alt="">
+          <img src="./img/MENU/LISTA DE PRECIOS-13.png" loading="lazy" style="width:100%;" alt="">
         </div>
       </div>
     </div>
@@ -683,12 +727,13 @@
   Tu navegador no soporta el elemento "audio".
 </audio>
 <script src="./js/video.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
 <script src="./js/fullscreenslides.js"></script>
 <script src="./js/hamburguerMenu.js"></script>
 <script src="./js/scrollreveal.js"></script>
 <script src="./js/scroll.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/slides.js"></script>
 <script src="./js/scripts.js"></script>
 
 </html>

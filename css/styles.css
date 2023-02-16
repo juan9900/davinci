@@ -18,10 +18,38 @@ span {
   position: absolute; /* TODO: ESTE TIENE QUE SER ABSOLUTE */
   z-index: 9;
 }
+
+#section-promos {
+  background: url("/img/patronnuevo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#card-slider {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
 .promos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 60%;
+}
+
+.promo {
+  text-align: center;
+}
+.promos-container {
+  padding-bottom: 3rem;
+}
+
+.promos-list {
+  padding: 0 1rem;
+}
+
+.promo img {
+  width: 80%;
 }
 .marquee {
   height: 20rem;
@@ -409,6 +437,21 @@ textarea {
   margin-top: 2rem;
   color: white;
 }
+.birthday-label {
+  background-color: #fff;
+  height: 100%;
+  line-height: auto;
+  padding: 0.5rem 0.3rem 0.5rem 0.5rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+#birthdate {
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0.5rem;
+}
 
 .input-group-text {
   border: none;
@@ -456,7 +499,8 @@ textarea {
   flex-direction: column;
 }
 .direccion span {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
 }
 .images-banner {
   height: 19rem;
@@ -653,6 +697,14 @@ textarea {
   }
   .redes-sociales-image-primero img {
     width: 18rem;
+  }
+
+  #card-slider {
+    width: 95%;
+  }
+
+  .promo img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 400px) {

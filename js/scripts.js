@@ -19,15 +19,18 @@ $('#club-form').on('submit',(e) => {
     lastName = $('#lastName').val();
     email = $('#email').val();
     phoneNumber = $('#phoneNumber').val();
+    birthdate = $('#birthdate').val();
+
     e.preventDefault();
     $.ajax({
         type: "POST",
-        url: '/modules/addClient.php',
+        url: '/davinci/modules/addClient.php',
         data: {
             firstName,
             lastName,
             email,
-            phoneNumber
+            phoneNumber,
+            birthdate,
         },
         dataType: 'json',
         success: (data) => {
@@ -97,3 +100,16 @@ const alert = (message, type) => {
     }
 
 }
+
+$(document).ready(()=>{
+    const date = new Date();
+    const today = date.toLocaleDateString();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var  day = date.getDate();
+    
+    {month < 10 ? month = '0' + month : null};
+    {day < 10 ? day = '0' + day : null}
+
+    $('#birthdate').attr('max', `${year}-${month}-${day}`);
+})
