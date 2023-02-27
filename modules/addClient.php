@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include('db.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -7,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $phoneNumber = test_input($_POST['phoneNumber']);
     $email = test_input($_POST['email']);
     $birthdate = test_input($_POST['birthdate']);
-
     $errors = [];
 
     if (preg_match('~[0-9]+~', $firstName)) {
@@ -95,11 +95,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $lastName = ucwords(strtolower($lastName));
 
         //ADD NEW USER
-        $sql = "INSERT INTO clients (firstName, lastName, phoneNumber, email,birthdate) VALUES (?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO clients (firstName, lastName, phoneNumber, email, birthdate) VALUES (?, ?, ?, ?, ?)";
         if (!$stmt = $db->prepare($sql)) {
 
             array_push($errors, 'Error preparando sql 2' . $db->errno . $db->error);
         }
+        $firstName = '2023-01-01';
 
         if (!$stmt->bind_param("sssss", $firstName, $lastName, $phoneNumber, $email, $birthdate)) {
             array_push($errors, 'Error binding sql 2' . $stmt->errno . $stmt->error);

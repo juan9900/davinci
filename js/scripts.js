@@ -19,12 +19,13 @@ $('#club-form').on('submit',(e) => {
     lastName = $('#lastName').val();
     email = $('#email').val();
     phoneNumber = $('#phoneNumber').val();
-    birthdate = $('#birthdate').val();
-
+    birthdate = new Date($('#birthdate').val());
+    console.log(birthdate);
     e.preventDefault();
+
     $.ajax({
         type: "POST",
-        url: '/davinci/modules/addClient.php',
+        url: '/modules/addClient.php',
         data: {
             firstName,
             lastName,
@@ -47,8 +48,8 @@ $('#club-form').on('submit',(e) => {
                 },4000)
             }
         },
-        error: (e) => {
-            console.log('error: ' , e);
+        error: (error) => {
+            console.log('error: ' , error);
         },
       });
 })
@@ -101,6 +102,21 @@ const alert = (message, type) => {
 
 }
 
+const bgMusic = $('#bgMusic')[0];
+const musicBtn = $('#music-btn');
+const pauseImg = $('.pause-img');
+    bgMusic.volume = 0.05; // sets the volume to 5%
+$(musicBtn).on('click',function(){
+    if(bgMusic.paused){
+        bgMusic.play();
+        $(pauseImg).attr('src','/img/Simple_Music.-whitesvg.svg');
+
+    }else{
+        bgMusic.pause();
+        $(pauseImg).attr('src','/img/Simple_Music.-nosvg.svg');
+    }
+})
+
 $(document).ready(()=>{
     const date = new Date();
     const today = date.toLocaleDateString();
@@ -112,4 +128,6 @@ $(document).ready(()=>{
     {day < 10 ? day = '0' + day : null}
 
     $('#birthdate').attr('max', `${year}-${month}-${day}`);
+
+
 })

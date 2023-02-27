@@ -1,15 +1,60 @@
+img {
+  max-width: 100%;
+}
+
+:root {
+  --title: #55120a;
+}
+
 @font-face {
   font-family: "NalphimRegular";
   src: url("../fonts/nephilm.otf");
 }
 body {
   font-family: "NalphimRegular";
+  /* overflow-x: hidden; */
 }
 .title h2,
 span {
   color: #1c0404;
 }
 
+header {
+  height: 65vh;
+  background: url("/img/patronnuevo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header li img {
+  object-fit: cover;
+  object-position: 100% 59%;
+}
+
+#music-btn {
+  width: 4rem;
+  height: 4rem;
+  background: #eed8c0;
+  border-radius: 10rem;
+  position: fixed;
+  bottom: 12.5rem;
+  right: 1.3rem;
+}
+#splide {
+  height: 100%;
+}
+
+#splide img {
+  height: 100%;
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  z-index: 3;
+  width: auto;
+}
 .navbar-brand img {
   border-radius: 100%;
 }
@@ -23,9 +68,14 @@ span {
   background: url("/img/patronnuevo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 4rem;
 }
 
-#card-slider {
+/* #bebidas-slider .splide__arrows {
+  display: none;
+} */
+
+.promo-slider {
   width: 85%;
   margin: 0 auto;
   padding: 0 5rem;
@@ -49,7 +99,7 @@ span {
 }
 
 .promo img {
-  width: 80%;
+  width: 85%;
 }
 .marquee {
   height: 20rem;
@@ -320,19 +370,56 @@ span {
 .vision {
   width: 100%;
   overflow-x: hidden;
-}
-#visione {
-  width: 43%;
-}
-
-.fondo-vision {
   background-image: url("../img/patronnuevo.jpg");
   background-position: center;
   background-size: cover;
-  height: 30rem;
+}
+#visione {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fondo-vision {
+  /* background-image: url("../img/patronnuevo.jpg");
+  background-position: center;
+  background-size: cover; */
+  /* height: 30rem; */
   display: flex;
   align-items: center;
   padding: 2.9rem;
+}
+
+.market {
+  background-image: url("../img/BANNER-DAVINCI-FONDO.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.img-mercado {
+  width: 100%;
+}
+
+.img-mercado-izquierda {
+  display: none;
+}
+
+.mercado-container,
+.market picture {
+  width: 50%;
+}
+.texto-mercado {
+  font-size: 1.7rem;
+  width: 70%;
+  color: var(--title);
+}
+
+.texto-mercado span {
+  font-size: 5rem;
+  line-height: 5rem;
+  color: var(--title);
+  font-weight: bold;
 }
 .promos {
   background-image: url("../img/patronnuevo.jpg");
@@ -451,6 +538,7 @@ textarea {
   margin-left: 0;
   margin-top: 0;
   padding: 0.5rem;
+  text-align: right;
 }
 
 .input-group-text {
@@ -630,6 +718,28 @@ textarea {
 .promos img {
   width: 23rem;
 }
+
+#modal-video .modal-dialog {
+  margin: 1rem auto 0 auto;
+  width: 70%;
+  height: 100%;
+}
+
+#modal-video .modal-content {
+  height: 80%;
+  padding: 1rem;
+}
+
+#modal-video iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  header {
+    height: 38vh;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .hamburger-container {
     top: 3%;
@@ -674,9 +784,9 @@ textarea {
     width: inherit;
     text-align: center;
   }
-  .fondo-vision {
+  /* .fondo-vision {
     height: 35rem;
-  }
+  } */
   .footer-texto {
     text-align: center;
   }
@@ -692,14 +802,11 @@ textarea {
   .redes-sociales-image img {
     width: 14rem;
   }
-  #visione {
-    width: 90%;
-  }
   .redes-sociales-image-primero img {
     width: 18rem;
   }
 
-  #card-slider {
+  .promo-slider {
     width: 95%;
   }
 
@@ -733,9 +840,9 @@ textarea {
   .images-banner {
     height: 16rem;
   }
-  .fondo-vision {
+  /* .fondo-vision {
     height: 43rem;
-  }
+  } */
   .luces img {
     height: 43rem;
   }
@@ -766,10 +873,24 @@ textarea {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
   #reproducir,
   #parar {
     display: none;
+  }
+
+  .texto-mercado {
+    font-size: 1.2rem;
+  }
+
+  .texto-mercado span {
+    font-size: 3.9rem;
+    line-height: 3.2rem;
+  }
+
+  .mercado-container,
+  .market picture {
+    width: 100%;
   }
 }
 
@@ -796,9 +917,6 @@ textarea {
   /* #parar {
     bottom: 77%;
   } */
-  #visione {
-    width: inherit;
-  }
   #vision {
     width: inherit;
     text-align: center;
@@ -809,14 +927,11 @@ textarea {
 }
 @media screen and (min-width: 2000px) {
   .fondo-vision {
-    height: 60rem;
+    /* height: 60rem; */
     padding: 9rem;
   }
   .luces img {
     height: 60rem;
-  }
-  .navbar-brand {
-    margin-left: -18rem;
   }
   .hamburguer {
     /* margin-left: 45rem; */
@@ -826,5 +941,76 @@ textarea {
   }
   .mision-texto img {
     max-width: 17rem;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  header {
+    height: 45vh;
+  }
+
+  header li img {
+    object-position: 100% 58%;
+  }
+  .promo-slider {
+    width: 50%;
+  }
+
+  .promo img {
+    width: 60%;
+  }
+
+  #visione {
+    text-align: center;
+  }
+
+  .luces img {
+    width: 65%;
+    height: auto;
+  }
+
+  .vision > div {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+  }
+
+  /* .market > div {
+    width: 70%;
+    margin: 0 auto;
+  } */
+
+  .texto-mercado {
+    font-size: 2.5rem;
+  }
+
+  .texto-mercado span {
+    font-size: 8rem;
+  }
+
+  .market .img-mercado {
+    width: 100%;
+  }
+
+  .market picture,
+  .market img {
+    flex-grow: 1;
+    width: 45%;
+  }
+
+  .market div {
+    flex-grow: 1.5;
+  }
+
+  .mercado-container {
+    justify-content: flex-start;
+  }
+
+  .img-mercado-izquierda {
+    display: block;
+  }
+
+  #section-promos {
+    padding-top: 10rem;
   }
 }

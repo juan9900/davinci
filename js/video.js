@@ -7,11 +7,11 @@ console.log(video)
 //     document.getElementById("video").play();
 // }
 reproducir.addEventListener("click", function(){
-    document.getElementById("video").play();
-    header.classList.add("none")
-    video.classList.remove("none")
-    pararButton.classList.remove("none")
-    reproducir.classList.add("none")
+    // document.getElementById("video").play();
+    // header.classList.add("none")
+    // video.classList.remove("none")
+    // pararButton.classList.remove("none")
+    // reproducir.classList.add("none")
 })
 
 window.pausar = function() {
