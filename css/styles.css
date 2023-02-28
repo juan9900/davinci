@@ -397,6 +397,13 @@ header li img {
   background-size: cover;
 }
 
+.market picture {
+  flex-shrink: 0;
+}
+
+.mercado-container {
+  flex-grow: 1;
+}
 .img-mercado {
   width: 100%;
 }
