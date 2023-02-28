@@ -405,10 +405,6 @@ header li img {
   display: none;
 }
 
-.mercado-container,
-.market picture {
-  width: 50%;
-}
 .texto-mercado {
   font-size: 1.7rem;
   width: 70%;
@@ -942,6 +938,20 @@ textarea {
   .mision-texto img {
     max-width: 17rem;
   }
+  .mercado-container {
+    width: 33.3%;
+  }
+
+  .market picture {
+    width: 33.3%;
+  }
+
+  .img-mercado-izquierda {
+    width: 33.3%;
+  }
+  .img-mercado-izquierda {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 2300px) {
@@ -981,33 +991,19 @@ textarea {
   } */
 
   .texto-mercado {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .texto-mercado span {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   .market .img-mercado {
     width: 100%;
   }
 
-  .market picture,
-  .market img {
-    flex-grow: 1;
-    width: 45%;
-  }
-
-  .market div {
-    flex-grow: 1.5;
-  }
-
   .mercado-container {
     justify-content: flex-start;
-  }
-
-  .img-mercado-izquierda {
-    display: block;
   }
 
   #section-promos {
