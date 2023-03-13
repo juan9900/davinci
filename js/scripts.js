@@ -1,4 +1,4 @@
-console.log($('.promo-plates'));
+
 // boton de opciones de platos
 const btnPlatesOptions = $('.promo-plates-container');
 const platesOptions = $('.promo-plates');
