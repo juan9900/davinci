@@ -4,6 +4,7 @@ img {
 
 :root {
   --title: #55120a;
+  --offWhite: #faf9f6;
 }
 
 @font-face {
@@ -87,6 +88,77 @@ header li img {
   width: 60%;
 }
 
+.splide__slide__container {
+  height: 100%;
+}
+.promo-splide {
+  height: 100%;
+  width: 85%;
+  background: url("/img/PROMOS/fondo-promo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3rem;
+  color: var(--title);
+}
+
+.promo-title-btn {
+  font-size: 1.3em;
+  position: relative;
+  z-index: 2;
+}
+
+.promo-splide img {
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+.promo-title-btn {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.promo-info {
+  text-align: left;
+  background: var(--title);
+  color: var(--offWhite);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  opacity: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#promo-btn-estandar:hover + .promo-info.promo-estandar {
+  opacity: 1;
+}
+
+#promo-btn-gourmet:hover + .promo-info.promo-gourmet {
+  opacity: 1;
+}
+
+.promo-info ul {
+  padding-left: 0.2em;
+  list-style-type: none;
+}
+.promo-info li {
+  font-size: 0.78em;
+}
+.promo-info p {
+  font-size: 1.5em;
+  margin-bottom: 0rem;
+}
+.promo-schedule {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+}
 .promo {
   text-align: center;
 }
@@ -100,6 +172,26 @@ header li img {
 
 .promo img {
   width: 85%;
+}
+
+.promo-btn:link,
+.promo-btn:visited {
+  font-size: 0.8em;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  text-decoration: none;
+  display: block;
+  background: rgb(119, 90, 59);
+  background: linear-gradient(
+    180deg,
+    rgba(119, 90, 59, 1) 0%,
+    rgba(146, 116, 76, 1) 32%,
+    rgba(206, 176, 120, 1) 89%
+  );
+
+  color: #fff;
+  border-radius: 1rem;
 }
 .marquee {
   height: 20rem;
@@ -741,6 +833,35 @@ textarea {
   header {
     height: 38vh;
   }
+
+  .promo-splide {
+    width: 100%;
+  }
+
+  .promo-title-btn {
+    font-size: 1em;
+  }
+
+  .promo-schedule {
+    font-size: 0.8em;
+  }
+
+  .promo-btn:link,
+  .promo-btn:visited {
+    font-size: 0.8em;
+  }
+
+  .promo-splide img.promo-price {
+    width: 60%;
+  }
+
+  .promo-info p {
+    font-size: 1em;
+  }
+
+  .promo-info {
+    top: 90%;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -824,6 +945,10 @@ textarea {
 }
 
 @media screen and (min-width: 1024px) {
+  .promos-list {
+    display: flex;
+    justify-content: center;
+  }
   .hamburger-container {
     padding: 0.5rem 0.7rem;
   }
@@ -874,6 +999,13 @@ textarea {
   .mision-texto img {
     max-width: 15rem;
   }
+  .promo-schedule {
+    font-size: 1.1em;
+  }
+  .promo-btn:link,
+  .promo-btn:visited {
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -904,6 +1036,7 @@ textarea {
     z-index: 1;
   }
 }
+
 @media screen and (min-width: 701px) and (max-width: 1023px) {
   .hamburguer {
     /* transform: translateX(196px); */
@@ -926,6 +1059,21 @@ textarea {
   }
   .luces img {
     height: 50rem;
+  }
+
+  .promo-splide {
+    width: 85%;
+    border-radius: 1.3rem;
+  }
+
+  .promo-schedule {
+    font-size: 0.7em;
+  }
+
+  .promo-btn:link,
+  .promo-btn:visited {
+    font-size: 0.55em;
+    padding: 0.2rem;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -1015,5 +1163,39 @@ textarea {
 
   #section-promos {
     padding-top: 10rem;
+  }
+
+  .promo-splide {
+    width: 60%;
+    border-radius: 1.8rem;
+  }
+
+  .promo-title-btn {
+    font-size: 0.9em;
+  }
+
+  .promo-schedule {
+    font-size: 0.6em;
+  }
+
+  .promo-btn:link,
+  .promo-btn:visited {
+    font-size: 0.7em;
+  }
+
+  .promo-splide img.promo-price {
+    width: 60%;
+  }
+
+  .promo-info p {
+    font-size: 0.8em;
+  }
+
+  .promo-info li {
+    font-size: 0.6em;
+  }
+
+  .promo-info {
+    top: 95%;
   }
 }
