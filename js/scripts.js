@@ -125,4 +125,6 @@ $(document).ready(() => {
   }
 
   $("#birthdate").attr("max", `${year}-${month}-${day}`);
+
+  $("#formModal").modal("show");
 });

@@ -20,6 +20,31 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css/splide.min.css">
+  <!-- Meta Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1026621875320128');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1026621875320128&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -31,7 +56,7 @@
       </button>
       <a href="https://api.whatsapp.com/send/?phone=584122994586&type=phone_number&app_absent=0&text=%C2%A1Bienvenido%20a%20nuestro%20ristorante%21%20A%20trav%C3%A9s%20de%20ac%C3%A1%20podr%C3%A1s%20realizar%20la%20reservaci%C3%B3n%20para%20tu%20desayuno%2C%20almuerzo%2C%20cena%20o%20evento%C2%A0especial.%C2%A0%E2%81%A3%20%F0%9F%8D%BD%EF%B8%8F" target="__blank">RESERVAS</a>
       <a href="#nosotros">NOSOTROS</a>
-      <a href="#sugerencias">CLUB DA VINCI</a>
+      <a href="#club">CLUB DA VINCI</a>
       <a href="#contacto">UBÍCANOS</a>
     </div>
   </nav>
@@ -269,11 +294,14 @@
 
         <div class="splide__track promos-container">
           <ul class="splide__list promos-list  ">
-            <!-- <li class="splide__slide">
-              <div class="splide__slide__container promo">
-                <img src="/img/PROMOS/promo1.png" alt="Promoción 3x2 en todas nuestras pizzas de domingo a jueves desde las 5:00 P.M.">
-              </div>
-            </li> -->
+            <li class="splide__slide">
+              <a href="https://api.whatsapp.com/send/?phone=584122994586" target="_blank">
+                <div class="splide__slide__container promo">
+                  <img src="/img/PROMOS/promo17.png" alt="Promoción 3x2 en todas nuestras pizzas de domingo a jueves desde las 5:00 P.M.">
+                </div>
+              </a>
+
+            </li>
 
             <li class="splide__slide">
               <div class="splide__slide__container d-flex justify-content-center">
@@ -343,7 +371,7 @@
           <ul class="splide__list promos-list">
             <li class="splide__slide">
               <div class="splide__slide__container promo">
-                <img src="/img/PROMOS/promoCopas.png" alt="Promoción 3x2 en todas nuestras pizzas de domingo a jueves desde las 5:00 P.M.">
+                <img src="/img/PROMOS/promo15.png" alt="Jueves de pizza y copas de vino a $1.50. Todos los jueves a partir de las 6:00 p.m.">
               </div>
             </li>
 
@@ -359,7 +387,7 @@
             </li>
             <li class="splide__slide">
               <div class="splide__slide__container promo">
-                <img src="/img/PROMOS/promo11.png" alt="Promo Noches de Tablas y Vinos. Dispomible todos los jueves">
+                <img src="/img/PROMOS/promo16.png" alt="Noches de tabla de salumeria + 1 botella de vino por $25. Todos los viernes">
               </div>
             </li>
           </ul>
@@ -369,7 +397,26 @@
 
 
 
-    <section id="sugerencias" class="contact-zone">
+
+    <!-- Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <script type="text/javascript" src="https://api.clientify.net/web-marketing/superforms/script/123368.js"></script>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <section id="club" class="contact-zone">
       <div class="container">
         <script type="text/javascript" src="https://api.clientify.net/web-marketing/superforms/script/123368.js"></script>
         <div class="encuesta">
