@@ -1050,7 +1050,6 @@ textarea {
 @media screen and (min-width: 1024px) {
   .promos-list {
     display: flex;
-    justify-content: center;
   }
 
   .hamburger-container {
