@@ -1,0 +1,33 @@
+/* === HERO — Header Carousel, Splide, Music Controls === */
+
+#splide {
+  height: 100%;
+}
+
+#splide img {
+  height: 100%;
+}
+
+.splide__slide__container {
+  height: 100%;
+}
+
+.splide__arrow--next,
+.splide__arrow--prev {
+  margin-top: 1rem !important;
+}
+
+/* Collapsed into a single rule — #reproducir and #parar are identical */
+#reproducir,
+#parar {
+  position: absolute;
+  top: 6.8%;
+  right: 15%;
+  padding: 0.5rem;
+  background: transparent;
+  border-radius: 1.4rem;
+  color: var(--color-red-deep);
+  background-color: #eed8c0;
+  border: 2px solid var(--color-red-deep);
+  z-index: 1;
+}

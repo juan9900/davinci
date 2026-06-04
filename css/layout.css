@@ -1,0 +1,40 @@
+/* === LAYOUT — Header, Nosotros, Footer === */
+
+header {
+  height: 65vh;
+  background: var(--bg-pattern);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header li img {
+  object-fit: cover;
+  object-position: 100% 59%;
+}
+
+.nosotros {
+  background-image: var(--bg-pattern);
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.footer-texto {
+  height: 3rem;
+  display: flex;
+  color: #ffff;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-red-brand);
+}
+
+.footer-texto span {
+  color: white;
+}
+
+.footer-texto a {
+  color: white;
+  text-decoration: none;
+}

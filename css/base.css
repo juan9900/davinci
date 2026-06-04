@@ -1,0 +1,74 @@
+/* === DESIGN TOKENS & SHARED BASE === */
+
+:root {
+  /* Brand colors */
+  --title: #55120a;
+  --offWhite: #faf9f6;
+  --color-red-dark: #1c0404;
+  --color-red-brand: #7d2e25;
+  --color-red-deep: #5c1911;
+  /* Dashboard colors */
+  --primary: #990f00;
+  --primaryDarker: #8d0e00;
+  --primaryOpacity: #990f0043;
+  /* Background */
+  --bg-pattern: url("../img/patronnuevo.jpg");
+  /* Z-index scale */
+  --z-base: 1;
+  --z-floating: 100;
+  --z-nav: 200;
+  --z-modal: 1000;
+}
+
+/* === FONTS === */
+
+@font-face {
+  font-family: "NalphimRegular";
+  src: url("../fonts/nephilm.otf");
+}
+
+@font-face {
+  font-family: "ULMGROTESK-MEDIUM";
+  src: url("../fonts/FONTSFREE-NET-ULMGROTESK-MEDIUM-2CDBC613774DB6ED499E18CFF9B882C6.TTF");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.otf");
+}
+
+/* === RESET === */
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "NalphimRegular";
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+/* Intentionally preserving original selector — applies to all <span> site-wide */
+.title h2,
+span {
+  color: var(--color-red-dark);
+}
+
+/* === UTILITIES === */
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.col-especial {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}

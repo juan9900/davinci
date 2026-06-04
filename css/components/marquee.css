@@ -1,0 +1,32 @@
+/* === MARQUEE STRIP === */
+
+.marquee {
+  height: 20rem;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+  position: relative;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.marqueeScroll {
+  white-space: nowrap;
+  font-size: 0px;
+  will-change: transform;
+  font-family: "Galderglynn TitlingRg Bold";
+  position: absolute;
+  animation: marquee 29s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

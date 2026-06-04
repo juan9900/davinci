@@ -1,23 +1,25 @@
-let pararButton = document.getElementById('parar')
-let reproducir = document.getElementById('reproducir')
-let header = document.getElementById('splide')
-let video = document.getElementById('video')
-console.log(video)
-// window.reproducir = function() {
-//     document.getElementById("video").play();
-// }
-reproducir.addEventListener("click", function(){
-    document.getElementById("video").play();
-    header.classList.add("none")
-    video.classList.remove("none")
-    pararButton.classList.remove("none")
-    reproducir.classList.add("none")
-})
+DV.ready(() => {
+  const pararButton = document.getElementById('parar');
+  const btnReproducir = document.getElementById('reproducir');
+  const header = document.getElementById('splide');
+  const video = document.getElementById('video');
+  if (!pararButton || !btnReproducir || !header || !video) return;
 
-window.pausar = function() {
-    document.getElementById("video").pause();
-    header.classList.remove("none")
-    pararButton.classList.add("none")
-    reproducir.classList.remove("none")
-    video.classList.add("none")
-};
+  window.reproducir = () => {
+    video.play();
+    header.classList.add('none');
+    video.classList.remove('none');
+    pararButton.classList.remove('none');
+    btnReproducir.classList.add('none');
+  };
+
+  window.pausar = () => {
+    video.pause();
+    header.classList.remove('none');
+    pararButton.classList.add('none');
+    btnReproducir.classList.remove('none');
+    video.classList.add('none');
+  };
+
+  btnReproducir.addEventListener('click', window.reproducir);
+});

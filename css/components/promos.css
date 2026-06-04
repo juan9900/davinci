@@ -1,0 +1,131 @@
+/* === PROMOS SECTION === */
+
+#section-promos {
+  background: var(--bg-pattern);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 4rem;
+}
+
+.promo-slider {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.promos {
+  background-image: var(--bg-pattern);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.promos img {
+  width: 23rem;
+}
+
+.promos-container {
+  padding-bottom: 3rem;
+}
+
+.promos-list {
+  padding: 0 1rem;
+}
+
+.promo {
+  text-align: center;
+}
+
+.promo img {
+  width: 50%;
+}
+
+.promo-btn:link,
+.promo-btn:visited {
+  font-size: 0.8em;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  text-decoration: none;
+  display: block;
+  background: rgb(119, 90, 59);
+  background: linear-gradient(
+    180deg,
+    rgba(119, 90, 59, 1) 0%,
+    rgba(146, 116, 76, 1) 32%,
+    rgba(206, 176, 120, 1) 89%
+  );
+  color: #fff;
+  border-radius: 1rem;
+}
+
+/* === PROMO SPLIDE (interactive cards — currently commented out in markup) === */
+
+.promo-splide {
+  height: 100%;
+  width: 85%;
+  background: url("/img/PROMOS/fondo-promo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3rem;
+  color: var(--title);
+}
+
+/* Merged from two duplicate declarations */
+.promo-title-btn {
+  font-size: 1.3em;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.promo-splide img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.promo-info {
+  text-align: left;
+  background: var(--title);
+  color: var(--offWhite);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  opacity: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#promo-btn-estandar:hover + .promo-info.promo-estandar {
+  opacity: 1;
+}
+
+#promo-btn-gourmet:hover + .promo-info.promo-gourmet {
+  opacity: 1;
+}
+
+.promo-info ul {
+  padding-left: 0.2em;
+  list-style-type: none;
+}
+
+.promo-info li {
+  font-size: 0.78em;
+}
+
+.promo-info p {
+  font-size: 1.5em;
+  margin-bottom: 0rem;
+}
+
+.promo-schedule {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+}

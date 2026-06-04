@@ -1,0 +1,96 @@
+/* === VISION / NOSOTROS CONTENT SECTION === */
+
+.luces img {
+  width: 127%;
+  height: 34rem;
+}
+
+.vision {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: var(--bg-pattern);
+  background-position: center;
+  background-size: cover;
+}
+
+#visione {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fondo-vision {
+  display: flex;
+  align-items: center;
+  padding: 2.9rem;
+}
+
+.texto-vision {
+  padding: 2rem;
+  color: black;
+}
+
+.vision-texto img {
+  max-width: 13rem;
+}
+
+.mision-texto img {
+  max-width: 13rem;
+}
+
+.pedidos {
+  position: relative;
+  top: -1.5rem;
+  left: 5rem;
+}
+
+/* kept for re-enabling (currently commented out in markup) */
+.pedidos-- {
+  position: relative;
+  left: 5rem;
+  top: -6.5rem;
+}
+
+.pedidos---- {
+  position: relative;
+  left: 5rem;
+  top: -12rem;
+}
+
+/* === MARKET SECTION — currently commented out in markup, kept for re-enabling === */
+
+.market {
+  background-image: url("../img/BANNER-DAVINCI-FONDO.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.market picture {
+  flex-shrink: 0;
+}
+
+.mercado-container {
+  flex-grow: 1;
+}
+
+.img-mercado {
+  width: 100%;
+}
+
+.img-mercado-izquierda {
+  display: none;
+}
+
+.texto-mercado {
+  font-size: 1.7rem;
+  width: 70%;
+  color: var(--title);
+}
+
+.texto-mercado span {
+  font-size: 5rem;
+  line-height: 5rem;
+  color: var(--title);
+  font-weight: bold;
+}
