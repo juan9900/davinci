@@ -184,7 +184,7 @@ header li img {
 }
 
 .promo img {
-  width: 85%;
+  width: 50%;
 }
 
 .promo-btn:link,
@@ -1036,7 +1036,7 @@ textarea {
   }
 
   .promo img {
-    width: 100%;
+    width: 90%;
   }
 
 }
