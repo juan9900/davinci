@@ -1,0 +1,172 @@
+/* ===== MENU MODAL ===== */
+.menu-modal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal, 1000);
+  background: rgba(20, 22, 16, 0.92);
+  display: grid;
+  place-items: center;
+  padding: 5vw;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.menu-modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.menu-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+/* Panel */
+.menu-modal__panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 520px;
+}
+
+/* Close button */
+.menu-modal__close {
+  position: fixed;
+  top: clamp(1rem, 4vw, 2rem);
+  right: clamp(1rem, 5vw, 2.5rem);
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+.menu-modal__close:hover {
+  opacity: 1;
+}
+
+/* Title */
+.menu-modal__title {
+  font-family: var(--font-display, serif);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--crema, #e5decc);
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 0;
+}
+
+/* Tabs */
+.menu-modal__tabs {
+  display: flex;
+  gap: 0.625rem;
+}
+.menu-modal__tab {
+  font-family: "Poppins-Regular", "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.45rem 1.25rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--crema, #e5decc);
+  background: transparent;
+  color: var(--crema, #e5decc);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+.menu-modal__tab:hover {
+  background: rgba(229, 222, 204, 0.15);
+}
+.menu-modal__tab.is-active {
+  background: var(--terracota, #778c71);
+  border-color: var(--terracota, #778c71);
+  color: #fff;
+}
+
+/* Viewer */
+.menu-modal__viewer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Slides container — vertical scroll */
+.menu-modal__slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-height: 78vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  scroll-behavior: smooth;
+}
+.menu-modal__slides::-webkit-scrollbar {
+  width: 6px;
+}
+.menu-modal__slides::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+.menu-modal__slides::-webkit-scrollbar-thumb {
+  background: rgba(229, 222, 204, 0.3);
+  border-radius: 3px;
+}
+.menu-modal__slides::-webkit-scrollbar-thumb:hover {
+  background: rgba(229, 222, 204, 0.55);
+}
+.menu-modal__slides img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .menu-modal__panel {
+    gap: 0.875rem;
+  }
+  .menu-modal__slides {
+    max-height: 72vh;
+  }
+}
+@media (max-width: 380px) {
+  .menu-modal__tab {
+    font-size: 0.68rem;
+    padding: 0.4rem 0.9rem;
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 900px) {
+  .menu-modal {
+    padding: 2vw;
+  }
+  .menu-modal__panel {
+    max-width: 620px;
+    gap: 1.5rem;
+  }
+  .menu-modal__title {
+    font-size: 2.2rem;
+  }
+  .menu-modal__slides {
+    max-height: 86vh;
+  }
+}
+@media (min-width: 1400px) {
+  .menu-modal__panel {
+    max-width: 680px;
+  }
+}

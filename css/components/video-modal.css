@@ -1,0 +1,165 @@
+/* ===== VIDEO MODAL ===== */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal, 1000);
+  background: rgba(10, 11, 8, 0.94);
+  display: grid;
+  place-items: center;
+  padding: 5vw;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.video-modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.video-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+/* Panel */
+.video-modal__panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* Close button */
+.video-modal__close {
+  position: fixed;
+  top: clamp(1rem, 4vw, 2rem);
+  right: clamp(1rem, 5vw, 2.5rem);
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+.video-modal__close:hover {
+  opacity: 1;
+}
+
+/* Frame — 16:9 */
+.video-modal__frame {
+  position: relative;
+  width: min(960px, 92vw);
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+}
+.video-modal__frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ===== ANNIVERSARY BADGE ===== */
+@keyframes anniv-pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.18); }
+}
+
+.dv-anniv {
+  position: absolute;
+  bottom: clamp(4.5rem, 9vw, 6.5rem);
+  right: clamp(1.25rem, 5vw, 3.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.7rem 1.1rem 0.7rem 1rem;
+  background: rgba(20, 22, 16, 0.55);
+  border: 1.5px solid rgba(229, 222, 204, 0.55);
+  border-radius: 14px;
+  color: var(--crema, #e5decc);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    transform 0.25s,
+    background 0.25s,
+    border-color 0.25s,
+    box-shadow 0.25s;
+  z-index: 10;
+}
+.dv-anniv:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: rgba(119, 140, 113, 0.75);
+  border-color: var(--terracota, #778c71);
+  box-shadow: 0 8px 28px rgba(119, 140, 113, 0.45);
+}
+
+.dv-anniv__years {
+  font-family: var(--font-display, serif);
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--crema, #e5decc);
+}
+
+.dv-anniv__label {
+  font-family: var(--font-sans, sans-serif);
+  font-size: clamp(0.6rem, 1.2vw, 0.72rem);
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dv-anniv__play {
+  margin-top: 0.35rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1.5px solid rgba(229, 222, 204, 0.6);
+  font-size: 0.55rem;
+  padding-left: 0.1rem;
+  transition: border-color 0.2s, color 0.2s;
+  animation: anniv-pulse 3s ease-in-out infinite;
+}
+.dv-anniv:hover .dv-anniv__play {
+  border-color: #fff;
+  color: #fff;
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dv-anniv {
+    transition: none;
+  }
+  .dv-anniv__play {
+    animation: none;
+  }
+}
+
+/* Mobile: smaller badge, higher up to avoid overlap with dots */
+@media (max-width: 600px) {
+  .dv-anniv {
+    bottom: clamp(3.5rem, 12vw, 5rem);
+    right: clamp(0.75rem, 4vw, 1.5rem);
+    padding: 0.55rem 0.85rem;
+    border-radius: 10px;
+  }
+  .dv-anniv__years {
+    font-size: 1.6rem;
+  }
+}

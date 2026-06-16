@@ -18,6 +18,16 @@
   --z-floating: 100;
   --z-nav: 200;
   --z-modal: 1000;
+  /* Brand palette (Identidad Corporativa Oct 2025) */
+  --verde-salvia:  #778C71;
+  --verde-oscuro:  #3E4A33;
+  --crema:         #E5DECC;
+  --arena:         #C4B292;
+  --verde-claro:   #D6DDCC;
+  --terracota:     #A43230;
+  --marron:        #665334;
+  /* Display font token */
+  --font-display: "NalphimRegular", serif;
 }
 
 /* === FONTS === */
