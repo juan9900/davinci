@@ -123,6 +123,12 @@ p {
   width: 9.9rem;
   height: 3.5rem;
 }
+@media (max-width: 600px) {
+  .dv-nav .dv-rist-logo {
+    width: 9rem;
+    height: 3.1rem;
+  }
+}
 .dv-nav[data-scrolled="true"] .dv-rist-logo {
   background-color: #231f20;
 }

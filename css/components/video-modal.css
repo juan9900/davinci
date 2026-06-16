@@ -151,15 +151,35 @@
   }
 }
 
-/* Mobile: smaller badge, higher up to avoid overlap with dots */
+/* Mobile: compact horizontal layout to avoid overlap with hero CTAs and dots */
 @media (max-width: 600px) {
   .dv-anniv {
-    bottom: clamp(3.5rem, 12vw, 5rem);
-    right: clamp(0.75rem, 4vw, 1.5rem);
-    padding: 0.55rem 0.85rem;
-    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.55rem;
+    bottom: 4.25rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.45rem 0.7rem 0.45rem 0.75rem;
+    border-radius: 999px;
+    border-width: 1px;
   }
   .dv-anniv__years {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+  .dv-anniv__label {
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+    max-width: 5.5rem;
+    white-space: normal;
+  }
+  .dv-anniv__play {
+    margin-top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.5rem;
   }
 }

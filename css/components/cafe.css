@@ -758,6 +758,12 @@
   width: 9.9rem;
   height: 3.5rem;
 }
+@media (max-width: 600px) {
+  .dv-nav--cafe .dv-cafe-logo {
+    width: 9rem;
+    height: 3.1rem;
+  }
+}
 .dv-nav--cafe[data-scrolled="true"] .dv-cafe-logo {
   background-color: #231f20;
 }
@@ -1520,6 +1526,9 @@
   }
   .dv-chero__sub {
     max-width: 52ch;
+  }
+  .dv-chero .dv-hero__slide--right {
+    background-position: right top;
   }
 }
 @media (max-width: 560px) {
