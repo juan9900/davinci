@@ -10,6 +10,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
+  overflow: hidden;
 }
 .menu-modal.is-open {
   opacity: 1;
@@ -30,6 +31,8 @@
   gap: 1.25rem;
   width: 100%;
   max-width: 520px;
+  max-height: 100%;
+  min-height: 0;
 }
 
 /* Close button */
@@ -97,6 +100,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 /* Slides container — vertical scroll */
@@ -106,7 +111,7 @@
   align-items: center;
   gap: 1rem;
   width: 100%;
-  max-height: 78vh;
+  max-height: 100%;
   overflow-y: auto;
   border-radius: 12px;
   scroll-behavior: smooth;
@@ -135,11 +140,22 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
+  .menu-modal {
+    padding: 3vw;
+  }
   .menu-modal__panel {
     gap: 0.875rem;
   }
-  .menu-modal__slides {
-    max-height: 72vh;
+}
+@media (max-height: 600px) {
+  .menu-modal {
+    padding: 2vw 5vw;
+  }
+  .menu-modal__panel {
+    gap: 0.625rem;
+  }
+  .menu-modal__title {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 380px) {
@@ -160,9 +176,6 @@
   }
   .menu-modal__title {
     font-size: 2.2rem;
-  }
-  .menu-modal__slides {
-    max-height: 86vh;
   }
 }
 @media (min-width: 1400px) {
