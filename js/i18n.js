@@ -45,7 +45,7 @@
       "mercato.cta": "Conocer el Mercato",
 
       "club.kicker": "Únete",
-      "club.heading": "Club DaVinci",
+      "club.heading": "Club Da Vinci",
       "club.sub":
         "Beneficios, novedades e invitaciones exclusivas. Déjanos tus datos y forma parte de la familia.",
       "club.cta": "Completa nuestra encuesta de satisfacción",
@@ -68,8 +68,8 @@
       "ubicanos.sub": "Visítanos en cualquiera de nuestras sedes.",
 
       "cafe.divider": "También somos",
-      "cafe.kicker": "Grupo DaVinci",
-      "cafe.title": "Café DaVinci",
+      "cafe.kicker": "Grupo Da Vinci",
+      "cafe.title": "Café Da Vinci",
       "cafe.lede":
         "Panadería, repostería y cafetería. Productos frescos, momentos que se sienten como en casa.",
       "cafe.cta1": "Ver sedes",
@@ -90,12 +90,14 @@
       "cafe.phil.title": "Nuestra filosofía",
       "cafe.m1": "Panes artesanales",
       "cafe.m1d": "Masa madre, horneado del día.",
-      "cafe.m2": "Repostería",
-      "cafe.m2d": "Postres únicos, dulces de la casa.",
-      "cafe.m3": "Café de especialidad",
-      "cafe.m3d": "Espresso, latte art y bebidas frías.",
-      "cafe.m4": "Desayunos",
-      "cafe.m4d": "Para empezar el día como se debe.",
+      "cafe.m2": "Desayunos",
+      "cafe.m2d": "Para empezar el día como se debe.",
+      "cafe.m3": "Repostería",
+      "cafe.m3d": "Postres únicos, dulces de la casa.",
+      "cafe.m4": "Bebidas",
+      "cafe.m4d": "Infusiones, jugos y bebidas frías.",
+      "cafe.m5": "Café",
+      "cafe.m5d": "Espresso, latte art y café de especialidad.",
 
       "cafe.about.tagline": "Una pasión artesanal con raíces de verdad",
       "cafe.about.body":
@@ -106,7 +108,7 @@
       "cafe.hero.sub":
         "Pan recién horneado, postres únicos y café de especialidad. Cuatro sedes en Maracaibo para que te quedes un poco más.",
       "cafe.hero.cta1": "Ver la carta",
-      "cafe.hero.cta2": "Visítanos",
+      "cafe.hero.cta2": "Ubícanos",
       "cafe.hero.scroll": "Descubre",
       "cafe.gallery.kicker": "Nuestro espacio",
       "cafe.gallery.title": "Momentos que saben a casa",
@@ -114,20 +116,18 @@
       "cafe.g2": "Panes del día",
       "cafe.g3": "Café de especialidad",
       "cafe.g4": "Para compartir",
-      "cafe.h.kicker": "Visítanos",
+      "cafe.h.kicker": "Ubícanos",
       "cafe.h.title": "Horario",
-      "cafe.h.d1": "Domingo a Miércoles",
-      "cafe.h.t1": "07:30 a. m. – 09:30 p. m.",
-      "cafe.h.d2": "Jueves a Sábado",
-      "cafe.h.t2": "07:30 a. m. – 11:00 p. m.",
+      "cafe.h.d1": "Todos los días",
+      "cafe.h.t1": "07:00 a. m. – 10:00 p. m.",
       "cafe.u.title": "Maracaibo,\nedo. Zulia",
       "cafe.u.sub": "Cuatro sedes para encontrarnos. Te esperamos.",
 
       "footer.rist": "Ristorante",
       "footer.cafe": "Café",
-      "footer.tagline": "Grupo DaVinci · Maracaibo, Venezuela",
+      "footer.tagline": "Grupo Da Vinci · Maracaibo, Venezuela",
       "footer.rights":
-        "© 2026 DaVinci Barra Ristorante, C.A. Todos los derechos reservados.",
+        "© 2026 Da Vinci Barra Ristorante, C.A. Todos los derechos reservados.",
     },
 
     en: {
@@ -174,7 +174,7 @@
       "mercato.cta": "Explore the Mercato",
 
       "club.kicker": "Join",
-      "club.heading": "Club DaVinci",
+      "club.heading": "Club Da Vinci",
       "club.sub":
         "Perks, news and exclusive invitations. Leave your details and become part of the family.",
       "club.cta": "Take our service satisfaction survey",
@@ -197,8 +197,8 @@
       "ubicanos.sub": "Visit us at any of our locations.",
 
       "cafe.divider": "We are also",
-      "cafe.kicker": "Grupo DaVinci",
-      "cafe.title": "Café DaVinci",
+      "cafe.kicker": "Grupo Da Vinci",
+      "cafe.title": "Café Da Vinci",
       "cafe.lede":
         "Bakery, pastry and coffee shop. Fresh products and moments that feel like home.",
       "cafe.cta1": "See locations",
@@ -219,12 +219,14 @@
       "cafe.phil.title": "Our philosophy",
       "cafe.m1": "Artisan breads",
       "cafe.m1d": "Sourdough, baked daily.",
-      "cafe.m2": "Pastry",
-      "cafe.m2d": "Unique desserts, house sweets.",
-      "cafe.m3": "Specialty coffee",
-      "cafe.m3d": "Espresso, latte art and cold drinks.",
-      "cafe.m4": "Breakfast",
-      "cafe.m4d": "To start the day right.",
+      "cafe.m2": "Breakfast",
+      "cafe.m2d": "To start the day right.",
+      "cafe.m3": "Pastry",
+      "cafe.m3d": "Unique desserts, house sweets.",
+      "cafe.m4": "Drinks",
+      "cafe.m4d": "Infusions, juices and cold drinks.",
+      "cafe.m5": "Coffee",
+      "cafe.m5d": "Espresso, latte art and specialty coffee.",
 
       "cafe.about.tagline": "A true artisan passion",
       "cafe.about.body":
@@ -235,7 +237,7 @@
       "cafe.hero.sub":
         "Freshly baked bread, unique pastries and specialty coffee. Four locations in Maracaibo — stay a little longer.",
       "cafe.hero.cta1": "See the menu",
-      "cafe.hero.cta2": "Visit us",
+      "cafe.hero.cta2": "Find us",
       "cafe.hero.scroll": "Discover",
       "cafe.gallery.kicker": "Our space",
       "cafe.gallery.title": "Moments that taste like home",
@@ -243,20 +245,18 @@
       "cafe.g2": "Daily bread",
       "cafe.g3": "Specialty coffee",
       "cafe.g4": "To share",
-      "cafe.h.kicker": "Visit us",
+      "cafe.h.kicker": "Find us",
       "cafe.h.title": "Hours",
-      "cafe.h.d1": "Sunday to Wednesday",
-      "cafe.h.t1": "07:30 a.m. – 09:30 p.m.",
-      "cafe.h.d2": "Thursday to Saturday",
-      "cafe.h.t2": "07:30 a.m. – 11:00 p.m.",
+      "cafe.h.d1": "Every day",
+      "cafe.h.t1": "07:00 a.m. – 10:00 p.m.",
       "cafe.u.title": "Maracaibo, Zulia State",
       "cafe.u.sub": "Four locations to meet. We'll be waiting.",
 
       "footer.rist": "Ristorante",
       "footer.cafe": "Café",
-      "footer.tagline": "Grupo DaVinci · Maracaibo, Venezuela",
+      "footer.tagline": "Grupo Da Vinci · Maracaibo, Venezuela",
       "footer.rights":
-        "© 2026 DaVinci Barra Ristorante, C.A. All rights reserved.",
+        "© 2026 Da Vinci Barra Ristorante, C.A. All rights reserved.",
     },
 
     it: {
@@ -297,7 +297,7 @@
       "valores.body": "Eccellenza · Servizio eccezionale · Rispetto · Impegno.",
 
       "club.kicker": "Unisciti",
-      "club.heading": "Club DaVinci",
+      "club.heading": "Club Da Vinci",
       "club.sub":
         "Vantaggi, novità e inviti esclusivi. Lascia i tuoi dati ed entra a far parte della famiglia.",
       "club.cta": "Completa il sondaggio di soddisfazione",
@@ -320,8 +320,8 @@
       "ubicanos.sub": "Vieni a trovarci in una delle nostre sedi.",
 
       "cafe.divider": "Siamo anche",
-      "cafe.kicker": "Grupo DaVinci",
-      "cafe.title": "Café DaVinci",
+      "cafe.kicker": "Grupo Da Vinci",
+      "cafe.title": "Café Da Vinci",
       "cafe.lede":
         "Panetteria, pasticceria e caffetteria. Prodotti freschi e momenti che sanno di casa.",
       "cafe.cta1": "Vedi le sedi",
@@ -342,12 +342,14 @@
       "cafe.phil.title": "La nostra filosofia",
       "cafe.m1": "Pani artigianali",
       "cafe.m1d": "Pasta madre, sfornati ogni giorno.",
-      "cafe.m2": "Pasticceria",
-      "cafe.m2d": "Dolci unici, fatti in casa.",
-      "cafe.m3": "Caffè speciale",
-      "cafe.m3d": "Espresso, latte art e bevande fredde.",
-      "cafe.m4": "Colazioni",
-      "cafe.m4d": "Per iniziare bene la giornata.",
+      "cafe.m2": "Colazioni",
+      "cafe.m2d": "Per iniziare bene la giornata.",
+      "cafe.m3": "Pasticceria",
+      "cafe.m3d": "Dolci unici, fatti in casa.",
+      "cafe.m4": "Bevande",
+      "cafe.m4d": "Infusi, succhi e bevande fredde.",
+      "cafe.m5": "Caffè",
+      "cafe.m5d": "Espresso, latte art e caffè speciale.",
 
       "cafe.about.tagline": "Una passione artigianale autentica",
       "cafe.about.body":
@@ -358,7 +360,7 @@
       "cafe.hero.sub":
         "Pane appena sfornato, dolci unici e caffè speciale. Quattro sedi a Maracaibo per farti restare un po' di più.",
       "cafe.hero.cta1": "Vedi il menù",
-      "cafe.hero.cta2": "Vieni a trovarci",
+      "cafe.hero.cta2": "Dove siamo",
       "cafe.hero.scroll": "Scopri",
       "cafe.gallery.kicker": "Il nostro spazio",
       "cafe.gallery.title": "Momenti che sanno di casa",
@@ -366,20 +368,18 @@
       "cafe.g2": "Pane del giorno",
       "cafe.g3": "Caffè speciale",
       "cafe.g4": "Da condividere",
-      "cafe.h.kicker": "Vieni a trovarci",
+      "cafe.h.kicker": "Dove siamo",
       "cafe.h.title": "Orari",
-      "cafe.h.d1": "Domenica a Mercoledì",
-      "cafe.h.t1": "07:30 – 21:30",
-      "cafe.h.d2": "Giovedì a Sabato",
-      "cafe.h.t2": "07:30 – 23:00",
+      "cafe.h.d1": "Tutti i giorni",
+      "cafe.h.t1": "07:00 – 22:00",
       "cafe.u.title": "Maracaibo, Stato Zulia",
       "cafe.u.sub": "Quattro sedi per incontrarci. Ti aspettiamo.",
 
       "footer.rist": "Ristorante",
       "footer.cafe": "Café",
-      "footer.tagline": "Grupo DaVinci · Maracaibo, Venezuela",
+      "footer.tagline": "Grupo Da Vinci · Maracaibo, Venezuela",
       "footer.rights":
-        "© 2026 DaVinci Barra Ristorante, C.A. Tutti i diritti riservati.",
+        "© 2026 Da Vinci Barra Ristorante, C.A. Tutti i diritti riservati.",
     },
   };
 

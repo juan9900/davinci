@@ -18,7 +18,7 @@
 
     frameEl.innerHTML =
       '<iframe src="https://www.youtube.com/embed/2sCLs3M6mvw?autoplay=1&rel=0" ' +
-      'title="DaVinci · 30 años de historia" frameborder="0" ' +
+      'title="Da Vinci · 30 años de historia" frameborder="0" ' +
       'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
       'referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
   }

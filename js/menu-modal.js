@@ -38,7 +38,7 @@
     srcs.forEach((src, i) => {
       const img = document.createElement('img');
       img.src = src;
-      img.alt = `DaVinci Menú · página ${i + 1}`;
+      img.alt = `Da Vinci Menú · página ${i + 1}`;
       img.loading = i < 2 ? 'eager' : 'lazy';
       slidesEl.appendChild(img);
     });
